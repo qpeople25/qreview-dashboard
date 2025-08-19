@@ -88,3 +88,19 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# Security and proprietary files
+config/secrets/
+*.key
+*.pem
+*.p12
+proprietary/
+trade_secrets/
+internal_docs/
+license_keys/
+
+# Development and debugging
+debug_logs/
+test_data/
+dev_notes.md
+internal_roadmap.md
+

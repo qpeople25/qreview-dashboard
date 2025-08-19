@@ -973,8 +973,6 @@ if 'organization_id' in st.session_state:
                 st.success(f"**Survey Data Loaded**: Using {len(df)} responses from your organization's assessments")
         else:
             st.warning(f"**No Data**: No survey data found for organization: {org_key}")
-else:
-    st.info("**Debug**: No organization_id in session state")
 
 # Check if we have data to display (only stop for non-admin users)
 if df is None or element_stats is None:
@@ -1254,7 +1252,7 @@ if st.session_state.user_role != "respondent":
                 
                 if platform_data:
                     # Debug: Show what columns we actually have
-                    st.info(f"**Debug**: Platform data columns: {list(platform_data[0].keys()) if platform_data else 'No data'}")
+    
                     
                     # Convert to DataFrame for heatmap
                     import pandas as pd
@@ -1526,8 +1524,7 @@ if st.session_state.user_role != "respondent":
         # Get assessment data for current organization
         if st.session_state.user_role == "admin":
             # For admin users, use the selected organization from the admin interface
-            st.info(f"**Debug**: Session state keys: {list(st.session_state.keys())}")
-            st.info(f"**Debug**: admin_selected_org value: '{getattr(st.session_state, 'admin_selected_org', 'NOT_SET')}'")
+            
             
             if hasattr(st.session_state, 'admin_selected_org') and st.session_state.admin_selected_org:
                 org_key = st.session_state.admin_selected_org
@@ -1549,15 +1546,12 @@ if st.session_state.user_role != "respondent":
         improvement_potential = {}
         
         if org_key:
-            st.info(f"**Debug**: Fetching data for organization: {org_key}")
             survey_data = get_survey_summary_for_org(org_key)
             if survey_data:
                 element_stats, responses_df = survey_data
-                st.info(f"**Debug**: Data returned - Element stats shape: {element_stats.shape if element_stats is not None else 'None'}, Responses: {len(responses_df) if responses_df is not None else 'None'}")
             else:
-                st.warning("**Debug**: No survey data returned from database")
+                survey_data = None
         else:
-            st.warning("**Debug**: No organization key available")
             survey_data = None
         
         if survey_data is not None:
@@ -1916,7 +1910,7 @@ if st.session_state.user_role != "respondent":
                 
                 st.success(f"**Using Assessment Data**: ROI calculated from {org_key} organization's actual 360 assessment results")
                 st.info(f"**Assessment Scores**: Current: {current_overall:.2f}, Target: {target_overall:.2f}, Gap: {improvement_potential:.2f}")
-                st.info(f"**Debug ROI Calc**: Organization: {org_key}, Element scores: {dict(current_element_scores)}")
+
                 
                 if improvement_potential > 0:
                     # Advanced L&D ROI calculation (IP - calculation logic hidden)
@@ -2998,7 +2992,7 @@ if st.session_state.user_role == "admin":
                             "Created": org["created_at"][:10] if org["created_at"] else "N/A"
                         })
                     
-                    # Add export functionality
+                    # Add export functionality and organization management
                     col1, col2 = st.columns([3, 1])
                     with col1:
                         st.dataframe(pd.DataFrame(org_data), use_container_width=True)
@@ -3012,10 +3006,119 @@ if st.session_state.user_role == "admin":
                                  file_name=f"organizations_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
                                  mime="text/csv"
                              )
+                    
+                    # Organization management actions
+                    st.markdown("---")
+                    st.subheader("Organization Actions")
+                    
+                    # Organization selector for management
+                    org_management_options = [f"{org['name']} ({org['org_key']})" for org in filtered_orgs]
+                    selected_org_manage = st.selectbox("Select Organization to Manage", org_management_options, key="org_management_selector")
+                    
+                    if selected_org_manage:
+                        selected_org_key_manage = selected_org_manage.split("(")[1].split(")")[0]
+                        selected_org_name_manage = selected_org_manage.split(" (")[0]
+                        
+                        # Get full organization data
+                        org_full_data = next((org for org in filtered_orgs if org['org_key'] == selected_org_key_manage), None)
+                        
+                        if org_full_data:
+                            col1, col2 = st.columns(2)
+                            
+                            with col1:
+                                if st.button("Edit Organization", key=f"edit_org_{selected_org_key_manage}", type="secondary"):
+                                    st.session_state.org_to_edit = selected_org_key_manage
+                                    st.session_state.org_to_edit_data = org_full_data
+                            
+                            with col2:
+                                if st.button("Delete Organization", key=f"delete_org_{selected_org_key_manage}", type="secondary"):
+                                    st.session_state.org_to_delete = selected_org_key_manage
+                                    st.session_state.org_to_delete_name = selected_org_name_manage
                 else:
                     st.warning("No organizations match your search criteria.")
             else:
                 st.info("No organizations found.")
+        
+            # Edit organization functionality
+            if hasattr(st.session_state, 'org_to_edit'):
+                st.markdown("---")
+                st.subheader("Edit Organization")
+                org_data_edit = st.session_state.org_to_edit_data
+                
+                with st.form(f"edit_org_form_{org_data_edit['org_key']}"):
+                    col1, col2 = st.columns(2)
+                    
+                    with col1:
+                        edit_org_name = st.text_input("Organization Name", value=org_data_edit['name'], key=f"edit_org_name_{org_data_edit['org_key']}")
+                        edit_org_key = st.text_input("Organization Key", value=org_data_edit['org_key'], key=f"edit_org_key_{org_data_edit['org_key']}", disabled=True)
+                        edit_org_type = st.selectbox("Type", ["client", "partner", "platform_admin"], index=["client", "partner", "platform_admin"].index(org_data_edit['type']), key=f"edit_org_type_{org_data_edit['org_key']}")
+                    
+                    with col2:
+                        edit_org_status = st.selectbox("Status", ["Active", "Inactive", "Suspended"], index=["Active", "Inactive", "Suspended"].index(org_data_edit['status']), key=f"edit_org_status_{org_data_edit['org_key']}")
+                        edit_org_industry = st.text_input("Industry", value=org_data_edit.get('industry', ''), key=f"edit_org_industry_{org_data_edit['org_key']}")
+                        edit_org_size = st.text_input("Size", value=org_data_edit.get('size', ''), key=f"edit_org_size_{org_data_edit['org_key']}")
+                    
+                    col1, col2, col3 = st.columns(3)
+                    with col1:
+                        if st.form_submit_button("Save Changes", type="primary"):
+                            try:
+                                # Update organization in database
+                                db_execute(
+                                    "UPDATE organizations SET name = ?, type = ?, status = ?, industry = ?, size = ? WHERE org_key = ?",
+                                    (edit_org_name, edit_org_type, edit_org_status, edit_org_industry, edit_org_size, org_data_edit['org_key'])
+                                )
+                                st.success("Organization updated successfully!")
+                                # Clear session state
+                                del st.session_state.org_to_edit
+                                del st.session_state.org_to_edit_data
+                                st.rerun()
+                            except Exception as e:
+                                st.error(f"Error updating organization: {str(e)}")
+                    
+                    with col2:
+                        if st.form_submit_button("Cancel", type="secondary"):
+                            del st.session_state.org_to_edit
+                            del st.session_state.org_to_edit_data
+                            st.rerun()
+                    
+                    with col3:
+                        if st.form_submit_button("Delete Organization", type="secondary"):
+                            st.session_state.org_to_delete = org_data_edit['org_key']
+                            st.session_state.org_to_delete_name = org_data_edit['name']
+                            del st.session_state.org_to_edit
+                            del st.session_state.org_to_edit_data
+                            st.rerun()
+            
+            # Delete organization confirmation
+            if hasattr(st.session_state, 'org_to_delete'):
+                st.markdown("---")
+                st.warning("⚠️ **Confirm Organization Deletion**")
+                st.error(f"You are about to delete organization: **{st.session_state.org_to_delete_name}**")
+                st.warning("This will remove the organization and all associated users and data!")
+                
+                col1, col2 = st.columns(2)
+                with col1:
+                    if st.button("✅ Confirm Delete", type="primary", key="confirm_delete_org"):
+                        try:
+                            # Delete all users in this organization first
+                            db_execute("DELETE FROM users WHERE org_key = ?", (st.session_state.org_to_delete,))
+                            # Delete all survey responses for this organization
+                            db_execute("DELETE FROM survey_responses WHERE org_key = ?", (st.session_state.org_to_delete,))
+                            # Delete the organization
+                            db_execute("DELETE FROM organizations WHERE org_key = ?", (st.session_state.org_to_delete,))
+                            st.success("Organization deleted successfully!")
+                            # Clear session state
+                            del st.session_state.org_to_delete
+                            del st.session_state.org_to_delete_name
+                            st.rerun()
+                        except Exception as e:
+                            st.error(f"Error deleting organization: {str(e)}")
+                
+                with col2:
+                    if st.button("❌ Cancel", type="secondary", key="cancel_delete_org"):
+                        del st.session_state.org_to_delete
+                        del st.session_state.org_to_delete_name
+                        st.rerun()
     
     with admin_tab3:
         st.subheader("Platform Settings")
@@ -3147,6 +3250,525 @@ if st.session_state.user_role == "admin":
             except Exception as e:
                 st.error(f"Error creating showcase respondent: {str(e)}")
             
+        # User Management Section
+        st.markdown("---")
+        st.subheader("User Management")
+        st.info("Manage platform users - view, delete, and modify user accounts.")
+        
+        # Mass operations functionality
+        with st.expander("Mass Operations", expanded=False):
+            st.warning("⚠️ **Mass Operations - Use with extreme caution!**")
+            st.info("Select multiple users for bulk operations. These actions cannot be undone.")
+            
+            # Fetch all non-admin users for mass operations
+            non_admin_users = db_fetchall("SELECT id, first_name, last_name, email, role, org_key FROM users WHERE role != 'admin' ORDER BY first_name, last_name")
+            
+            if non_admin_users:
+                # Create checkboxes for each user
+                selected_users_for_operations = []
+                for user in non_admin_users:
+                    if st.checkbox(
+                        f"{user['first_name']} {user['last_name']} ({user['email']}) - {user['role'].title()}",
+                        key=f"mass_operations_{user['id']}"
+                    ):
+                        selected_users_for_operations.append(user)
+                
+                # Mass operations buttons
+                if selected_users_for_operations:
+                    st.error(f"**Selected {len(selected_users_for_operations)} users for operations:**")
+                    for user in selected_users_for_operations:
+                        st.write(f"- {user['first_name']} {user['last_name']} ({user['email']})")
+                    
+                    col1, col2 = st.columns(2)
+                    with col1:
+                        if st.button("Delete Selected Users", type="primary", key="mass_delete_confirm"):
+                            st.session_state.users_to_mass_delete = selected_users_for_operations
+                            st.rerun()
+                    
+                    with col2:
+                        # Only show reset responses for respondents
+                        respondent_users = [u for u in selected_users_for_operations if u['role'] == 'respondent']
+                        if respondent_users:
+                            if st.button("Reset Selected Responses", type="secondary", key="mass_reset_responses"):
+                                st.session_state.users_to_mass_reset_responses = respondent_users
+                                st.rerun()
+                        else:
+                            st.info("No respondents selected for response reset.")
+                else:
+                    st.info("No users selected for operations.")
+            else:
+                st.info("No non-admin users available for mass operations.")
+        
+        # Mass delete confirmation
+        if hasattr(st.session_state, 'users_to_mass_delete'):
+            st.markdown("---")
+            st.warning("⚠️ **Confirm Mass User Deletion**")
+            st.error(f"You are about to delete **{len(st.session_state.users_to_mass_delete)} users**!")
+            st.warning("This action will permanently remove all selected users and their data!")
+            
+            # Show selected users
+            for user in st.session_state.users_to_mass_delete:
+                st.write(f"- {user['first_name']} {user['last_name']} ({user['email']}) - {user['role'].title()}")
+            
+            col1, col2 = st.columns(2)
+            with col1:
+                if st.button("✅ Confirm Mass Delete", type="primary", key="confirm_mass_delete"):
+                    try:
+                        deleted_count = 0
+                        for user in st.session_state.users_to_mass_delete:
+                            # Delete user's survey responses first
+                            db_execute("DELETE FROM survey_responses WHERE respondent_id = ?", (user['id'],))
+                            # Delete user
+                            db_execute("DELETE FROM users WHERE id = ?", (user['id'],))
+                            deleted_count += 1
+                        
+                        st.success(f"Successfully deleted {deleted_count} users!")
+                        del st.session_state.users_to_mass_delete
+                        st.rerun()
+                    except Exception as e:
+                        st.error(f"Error during mass deletion: {str(e)}")
+            
+            with col2:
+                if st.button("❌ Cancel Mass Delete", type="secondary", key="cancel_mass_delete"):
+                    del st.session_state.users_to_mass_delete
+                    st.rerun()
+        
+        # Mass reset responses confirmation
+        if hasattr(st.session_state, 'users_to_mass_reset_responses'):
+            st.markdown("---")
+            st.warning("⚠️ **Confirm Mass Response Reset**")
+            st.error(f"You are about to reset assessment responses for **{len(st.session_state.users_to_mass_reset_responses)} users**!")
+            st.warning("This will allow all selected users to resubmit their assessments. Previous responses will be permanently deleted!")
+            
+            # Show selected users
+            for user in st.session_state.users_to_mass_reset_responses:
+                st.write(f"- {user['first_name']} {user['last_name']} ({user['email']}) - {user['role'].title()}")
+            
+            col1, col2 = st.columns(2)
+            with col1:
+                if st.button("✅ Confirm Mass Reset", type="primary", key="confirm_mass_reset"):
+                    try:
+                        reset_count = 0
+                        for user in st.session_state.users_to_mass_reset_responses:
+                            # Delete user's survey responses
+                            db_execute("DELETE FROM survey_responses WHERE respondent_id = ?", (user['id'],))
+                            reset_count += 1
+                        
+                        st.success(f"Successfully reset responses for {reset_count} users!")
+                        st.info("All selected users can now log in and complete new assessments.")
+                        del st.session_state.users_to_mass_reset_responses
+                        st.rerun()
+                    except Exception as e:
+                        st.error(f"Error during mass response reset: {str(e)}")
+            
+            with col2:
+                if st.button("❌ Cancel Mass Reset", type="secondary", key="cancel_mass_reset"):
+                    del st.session_state.users_to_mass_reset_responses
+                    st.rerun()
+        
+        # User search and filters
+        st.markdown("---")
+        st.subheader("Search & Filter Users")
+        
+
+        
+        col1, col2, col3 = st.columns(3)
+        
+        with col1:
+            user_search = st.text_input("Search users", placeholder="Search by name, email, or organization...", key="user_search_input_admin")
+        
+        with col2:
+            user_role_filter = st.selectbox("Filter by role", ["All Roles", "admin", "client", "respondent"], key="user_role_filter_admin")
+        
+        with col3:
+            user_group_filter = st.selectbox("Filter by group", ["All Groups", "SLT", "LDT", "MGR", "LNR", "ADMIN"], key="user_group_filter_admin")
+        
+        # Organization filter
+        orgs_for_user_filter = db_fetchall("SELECT DISTINCT org_key FROM users WHERE org_key IS NOT NULL ORDER BY org_key")
+        org_filter_options = ["All Organizations"] + [org[0] for org in orgs_for_user_filter]
+        user_org_filter = st.selectbox("Filter by organization", org_filter_options, key="user_org_filter_admin")
+        
+        # Fetch all users
+        users_data = db_fetchall("SELECT id, first_name, last_name, email, role, org_key, group_type, created_at FROM users ORDER BY created_at DESC")
+        
+        if users_data:
+            # Apply filters directly to the data
+            filtered_users = []
+            for user in users_data:
+                # Convert to dict for easier access
+                user_dict = {
+                    'ID': user[0],
+                    'First Name': user[1],
+                    'Last Name': user[2],
+                    'Email': user[3],
+                    'Role': user[4],
+                    'Organization': user[5],
+                    'Group': user[6],
+                    'Created': user[7][:10] if user[7] else 'N/A'
+                }
+                
+                # Search filter
+                if user_search:
+                    search_term = user_search.lower()
+                    if not (search_term in user_dict['First Name'].lower() or 
+                           search_term in user_dict['Email'].lower() or
+                           search_term in user_dict['Organization'].lower()):
+                        continue
+                
+                # Role filter
+                if user_role_filter != "All Roles" and user_dict['Role'] != user_role_filter:
+                    continue
+                
+                # Group filter
+                if user_group_filter != "All Groups" and user_dict['Group'] != user_group_filter:
+                    continue
+                
+                # Organization filter
+                if user_org_filter != "All Organizations" and user_dict['Organization'] != user_org_filter:
+                    continue
+                
+                filtered_users.append(user_dict)
+            
+            # Display results count
+            st.info(f"Showing {len(filtered_users)} of {len(users_data)} users")
+            
+            if filtered_users:
+                # Quick actions for filtered results
+                st.markdown("**Quick Actions for Filtered Results:**")
+                col1, col2, col3 = st.columns(3)
+                
+                with col1:
+                    if st.button("Select All for Mass Operations", key="select_all_filtered_admin", type="secondary"):
+                        st.session_state.select_all_filtered = True
+                        st.rerun()
+                
+                with col2:
+                    if st.button("Clear Filters", key="clear_user_filters_admin", type="secondary"):
+                        st.rerun()
+                
+                with col3:
+                    st.info(f"**{len(filtered_users)} users** in current view")
+                
+                st.markdown("---")
+                
+                # Display users with management options
+                for user in filtered_users:
+                    with st.expander(f"{user['First Name']} {user['Last Name']} ({user['Email']}) - {user['Role'].title()}", expanded=False):
+                        col1, col2, col3 = st.columns([3, 2, 1])
+                        
+                        with col1:
+                            st.markdown(f"""
+                            **User Details:**
+                            - **Name**: {user['First Name']} {user['Last Name']}
+                            - **Email**: {user['Email']}
+                            - **Role**: {user['Role'].title()}
+                            - **Organization**: {user['Organization']}
+                            - **Group**: {user['Group']}
+                            - **Created**: {user['Created']}
+                            """)
+                        
+                        with col2:
+                            # User actions
+                            if user['Role'] != 'admin':  # Prevent admin from deleting themselves
+                                if st.button("Delete User", key=f"delete_user_{user['ID']}", type="secondary"):
+                                    st.session_state.user_to_delete = user['ID']
+                                    st.session_state.user_to_delete_name = f"{user['First Name']} {user['Last Name']}"
+                            
+                            # Edit user option
+                            if st.button("Edit User", key=f"edit_user_{user['ID']}", type="secondary"):
+                                st.session_state.user_to_edit = user['ID']
+                                st.session_state.user_to_edit_data = user
+                            
+                            # Reset password option
+                            if st.button("Reset Password", key=f"reset_pwd_{user['ID']}", type="secondary"):
+                                new_password = "demo123"  # Default reset password
+                                try:
+                                    db_execute(
+                                        "UPDATE users SET password_hash = ? WHERE id = ?",
+                                        (generate_password_hash(new_password), user['ID'])
+                                    )
+                                    st.success(f"Password reset for {user['First Name']} {user['Last Name']}")
+                                    st.info(f"**New Password**: {new_password}")
+                                    st.rerun()
+                                except Exception as e:
+                                    st.error(f"Error resetting password: {str(e)}")
+                            
+                            # Reset user responses option (for respondents only)
+                            if user['Role'] == 'respondent':
+                                if st.button("Reset Responses", key=f"reset_responses_{user['ID']}", type="secondary"):
+                                    st.session_state.user_to_reset_responses = user['ID']
+                                    st.session_state.user_to_reset_responses_name = f"{user['First Name']} {user['Last Name']}"
+                                    st.rerun()
+                        
+                        with col3:
+                            # User status indicator
+                            if user['Role'] == 'admin':
+                                st.success("Admin")
+                            elif user['Role'] == 'client':
+                                st.info("Client")
+                            else:
+                                st.info("Respondent")
+        
+        # Delete user confirmation
+        if hasattr(st.session_state, 'user_to_delete'):
+            st.markdown("---")
+            st.warning("⚠️ **Confirm User Deletion**")
+            st.error(f"You are about to delete user: **{st.session_state.user_to_delete_name}**")
+            st.warning("This action will permanently remove the user and all their data!")
+            
+            col1, col2 = st.columns(2)
+            with col1:
+                if st.button("✅ Confirm Delete", type="primary", key="confirm_delete_user"):
+                    try:
+                        # Delete user's survey responses first
+                        db_execute("DELETE FROM survey_responses WHERE respondent_id = ?", (st.session_state.user_to_delete,))
+                        # Delete user
+                        db_execute("DELETE FROM users WHERE id = ?", (st.session_state.user_to_delete,))
+                        st.success("User deleted successfully!")
+                        # Clear session state
+                        del st.session_state.user_to_delete
+                        del st.session_state.user_to_delete_name
+                        st.rerun()
+                    except Exception as e:
+                        st.error(f"Error deleting user: {str(e)}")
+            
+            with col2:
+                if st.button("❌ Cancel", type="secondary", key="cancel_delete_user"):
+                    del st.session_state.user_to_delete
+                    del st.session_state.user_to_delete_name
+                    st.rerun()
+        
+        # Edit user functionality
+        if hasattr(st.session_state, 'user_to_edit'):
+            st.markdown("---")
+            st.subheader("Edit User")
+            user_data = st.session_state.user_to_edit_data
+            
+            with st.form(f"edit_user_form_{user_data['ID']}"):
+                col1, col2 = st.columns(2)
+                
+                with col1:
+                    edit_first_name = st.text_input("First Name", value=user_data['First Name'], key=f"edit_first_name_{user_data['ID']}")
+                    edit_last_name = st.text_input("Last Name", value=user_data['Last Name'], key=f"edit_last_name_{user_data['ID']}")
+                    edit_email = st.text_input("Email", value=user_data['Email'], key=f"edit_email_{user_data['ID']}")
+                
+                with col2:
+                    edit_role = st.selectbox("Role", ["admin", "client", "respondent"], index=["admin", "client", "respondent"].index(user_data['Role']), key=f"edit_role_{user_data['ID']}")
+                    edit_org = st.text_input("Organization", value=user_data.get('Organization', ''), key=f"edit_edit_org_{user_data['ID']}")
+                    edit_group = st.selectbox("Group Type", ["SLT", "LDT", "MGR", "LNR", "ADMIN"], index=["SLT", "LDT", "MGR", "LNR", "ADMIN"].index(user_data.get('Group', 'LNR')), key=f"edit_group_{user_data['ID']}")
+                
+                # Form buttons
+                col1, col2, col3 = st.columns(3)
+                with col1:
+                    if st.form_submit_button("Save Changes", type="primary"):
+                        try:
+                            # Update user in database
+                            db_execute(
+                                "UPDATE users SET first_name = ?, last_name = ?, email = ?, role = ?, org_key = ?, group_type = ? WHERE id = ?",
+                                (edit_first_name, edit_last_name, edit_email, edit_role, edit_org, edit_group, user_data['ID'])
+                            )
+                            st.success("User updated successfully!")
+                            # Clear session state
+                            del st.session_state.user_to_edit
+                            del st.session_state.user_to_edit_data
+                            st.rerun()
+                        except Exception as e:
+                            st.error(f"Error updating user: {str(e)}")
+                
+                with col2:
+                    if st.form_submit_button("Cancel", type="secondary"):
+                        del st.session_state.user_to_edit
+                        del st.session_state.user_to_edit_data
+                        st.rerun()
+                
+                with col3:
+                    if st.form_submit_button("Delete User", type="secondary"):
+                        st.session_state.user_to_delete = user_data['ID']
+                        st.session_state.user_to_delete_name = f"{user_data['First Name']} {user_data['Last Name']}"
+                        del st.session_state.user_to_edit
+                        del st.session_state.user_to_edit_data
+                        st.rerun()
+        
+        # Reset user responses confirmation
+        if hasattr(st.session_state, 'user_to_reset_responses'):
+            st.markdown("---")
+            st.warning("⚠️ **Confirm Response Reset**")
+            st.info(f"You are about to reset all assessment responses for: **{st.session_state.user_to_reset_responses_name}**")
+            st.warning("This will allow the user to resubmit their assessment. Previous responses will be permanently deleted.")
+            
+            col1, col2 = st.columns(2)
+            with col1:
+                if st.button("✅ Confirm Reset", type="primary", key="confirm_reset_responses"):
+                    try:
+                        # Delete user's survey responses
+                        db_execute("DELETE FROM survey_responses WHERE respondent_id = ?", (st.session_state.user_to_reset_responses,))
+                        st.success(f"Assessment responses reset for {st.session_state.user_to_reset_responses_name}!")
+                        st.info("The user can now log in and complete a new assessment.")
+                        # Clear session state
+                        del st.session_state.user_to_reset_responses
+                        del st.session_state.user_to_reset_responses_name
+                        st.rerun()
+                    except Exception as e:
+                        st.error(f"Error resetting responses: {str(e)}")
+            
+            with col2:
+                if st.button("❌ Cancel", type="secondary", key="cancel_reset_responses"):
+                    del st.session_state.user_to_reset_responses
+                    del st.session_state.user_to_reset_responses_name
+                    st.rerun()
+        
+        # Data Management Section
+        st.markdown("---")
+        st.subheader("Data Management")
+        st.info("Manage platform data - clear assessments, reset organizations, and manage data integrity.")
+        
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            st.markdown("**Organization Data Management**")
+            
+            # Organization selector for data operations
+            orgs_for_data = db_fetchall("SELECT org_key, name FROM organizations ORDER BY name")
+            if orgs_for_data:
+                org_options = [f"{org[1]} ({org[0]})" for org in orgs_for_data]
+                org_options.insert(0, "All Organizations")
+                
+                selected_org_data = st.selectbox("Select Organization for Data Operations", org_options, key="data_org_selector")
+                
+                if selected_org_data != "All Organizations":
+                    selected_org_key = selected_org_data.split("(")[1].split(")")[0]
+                    org_name = selected_org_data.split(" (")[0]
+                    
+                    # Clear organization data
+                    if st.button("Clear Organization Data", key="clear_org_data", type="secondary"):
+                        st.session_state.org_to_clear = selected_org_key
+                        st.session_state.org_to_clear_name = org_name
+                    
+                    # Reset organization assessments
+                    if st.button("Reset Organization Assessments", key="reset_org_assessments", type="secondary"):
+                        try:
+                            db_execute("DELETE FROM survey_responses WHERE org_key = ?", (selected_org_key,))
+                            st.success(f"All assessment data cleared for {org_name}!")
+                            st.rerun()
+                        except Exception as e:
+                            st.error(f"Error clearing assessments: {str(e)}")
+                else:
+                    # Clear all data
+                    if st.button("Clear All Platform Data", key="clear_all_data", type="secondary"):
+                        st.session_state.clear_all_data = True
+                    
+                    # Reset all assessments
+                    if st.button("Reset All Assessments", key="reset_all_assessments", type="secondary"):
+                        try:
+                            db_execute("DELETE FROM survey_responses")
+                            st.success("All assessment data cleared from the platform!")
+                            st.rerun()
+                        except Exception as e:
+                            st.error(f"Error clearing assessments: {str(e)}")
+        
+        with col2:
+            st.markdown("**System Data Management**")
+            
+            # Database statistics
+            try:
+                user_count = db_fetchone("SELECT COUNT(*) FROM users")[0]
+                org_count = db_fetchone("SELECT COUNT(*) FROM organizations")[0]
+                response_count = db_fetchone("SELECT COUNT(*) FROM survey_responses")[0]
+                
+                st.info(f"""
+                **Platform Statistics:**
+                - **Users**: {user_count}
+                - **Organizations**: {org_count}
+                - **Survey Responses**: {response_count}
+                """)
+            except Exception as e:
+                st.error(f"Error fetching statistics: {str(e)}")
+            
+            # Export all data
+            if st.button("Export All Data", type="secondary", key="export_all_data"):
+                try:
+                    # Export users
+                    users_export = db_fetchall("SELECT * FROM users")
+                    users_df = pd.DataFrame(users_export, columns=['ID', 'First Name', 'Last Name', 'Email', 'Password Hash', 'Role', 'Organization', 'Group', 'Created'])
+                    
+                    # Export organizations
+                    orgs_export = db_fetchall("SELECT * FROM organizations")
+                    orgs_df = pd.DataFrame(orgs_export, columns=['Key', 'Name', 'Industry', 'Size', 'Created'])
+                    
+                    # Export survey responses
+                    responses_export = db_fetchall("SELECT * FROM survey_responses")
+                    responses_df = pd.DataFrame(responses_export, columns=['ID', 'Respondent ID', 'Organization', 'Element', 'Question', 'Score', 'Group Type', 'Submitted'])
+                    
+                    # Create zip file with all data
+                    import zipfile
+                    import io
+                    
+                    zip_buffer = io.BytesIO()
+                    with zipfile.ZipFile(zip_buffer, 'w', zipfile.ZIP_DEFLATED) as zip_file:
+                        zip_file.writestr('users.csv', users_df.to_csv(index=False))
+                        zip_file.writestr('organizations.csv', orgs_df.to_csv(index=False))
+                        zip_file.writestr('survey_responses.csv', responses_df.to_csv(index=False))
+                    
+                    zip_buffer.seek(0)
+                    st.download_button(
+                        label="Download All Data (ZIP)",
+                        data=zip_buffer.getvalue(),
+                        file_name=f"qreview_platform_data_{datetime.now().strftime('%Y%m%d_%H%M%S')}.zip",
+                        mime="application/zip"
+                    )
+                except Exception as e:
+                    st.error(f"Error exporting data: {str(e)}")
+        
+        # Clear organization data confirmation
+        if hasattr(st.session_state, 'org_to_clear'):
+            st.markdown("---")
+            st.warning(f"⚠️ **Confirm Organization Data Clear**")
+            st.error(f"You are about to clear all data for: **{st.session_state.org_to_clear_name}**")
+            st.warning("This will remove all survey responses and cannot be undone!")
+            
+            col1, col2 = st.columns(2)
+            with col1:
+                if st.button("✅ Confirm Clear", type="primary", key="confirm_clear_org"):
+                    try:
+                        db_execute("DELETE FROM survey_responses WHERE org_key = ?", (st.session_state.org_to_clear,))
+                        st.success(f"All data cleared for {st.session_state.org_to_clear_name}!")
+                        del st.session_state.org_to_clear
+                        del st.session_state.org_to_clear_name
+                        st.rerun()
+                    except Exception as e:
+                        st.error(f"Error clearing data: {str(e)}")
+            
+            with col2:
+                if st.button("❌ Cancel", type="secondary", key="cancel_clear_org"):
+                    del st.session_state.org_to_clear
+                    del st.session_state.org_to_clear_name
+                    st.rerun()
+        
+        # Clear all data confirmation
+        if hasattr(st.session_state, 'clear_all_data'):
+            st.markdown("---")
+            st.warning("⚠️ **Confirm Platform Data Clear**")
+            st.error("You are about to clear ALL data from the platform!")
+            st.warning("This will remove all survey responses, users, and organizations. This action cannot be undone!")
+            
+            col1, col2 = st.columns(2)
+            with col1:
+                if st.button("✅ Confirm Clear All", type="primary", key="confirm_clear_all"):
+                    try:
+                        db_execute("DELETE FROM survey_responses")
+                        db_execute("DELETE FROM users WHERE role != 'admin'")
+                        db_execute("DELETE FROM organizations")
+                        st.success("All platform data cleared successfully!")
+                        del st.session_state.clear_all_data
+                        st.rerun()
+                    except Exception as e:
+                        st.error(f"Error clearing data: {str(e)}")
+            
+            with col2:
+                if st.button("❌ Cancel", type="secondary", key="cancel_clear_all"):
+                    del st.session_state.clear_all_data
+                    st.rerun()
+        
         st.markdown("---")
         st.markdown('''**Admin Capabilities:**
         - Create and manage users (Priority)
@@ -3154,4 +3776,5 @@ if st.session_state.user_role == "admin":
         - Generate demo data for testing
         - Platform configuration and settings
         - User access management
+        - **NEW: User deletion and data management**
         ''', unsafe_allow_html=True)
