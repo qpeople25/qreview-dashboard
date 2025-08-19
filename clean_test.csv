@@ -1,0 +1,13 @@
+respondent_id,group,element,subelement,score,timestamp
+r1,SLT,Strategic Connection,Alignment with business strategy,5,2024-06-01T10:00:00Z
+r2,SLT,Needs Analysis,Prioritization by impact,4,2024-06-01T10:05:00Z
+r3,LDT,Strategic Connection,Alignment with business strategy,3,2024-06-01T10:10:00Z
+r4,LDT,Needs Analysis,Prioritization by impact,2,2024-06-01T10:15:00Z
+r5,MGR,Strategic Connection,Alignment with business strategy,4,2024-06-01T10:20:00Z
+r6,MGR,Needs Analysis,Prioritization by impact,5,2024-06-01T10:25:00Z
+r7,LNR,Strategic Connection,Alignment with business strategy,2,2024-06-01T10:30:00Z
+r8,LNR,Needs Analysis,Prioritization by impact,3,2024-06-01T10:35:00Z
+r9,SLT,Learning Design,Content relevance and quality,5,2024-06-01T10:40:00Z
+r10,LDT,Learning Design,Content relevance and quality,3,2024-06-01T10:45:00Z
+r11,MGR,Learning Design,Content relevance and quality,4,2024-06-01T10:50:00Z
+r12,LNR,Learning Design,Content relevance and quality,2,2024-06-01T10:55:00Z 

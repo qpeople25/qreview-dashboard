@@ -1,0 +1,21 @@
+# qReview Platform Email Configuration
+# Copy these settings to your .env file
+
+# SMTP Configuration
+SMTP_SERVER=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USERNAME=your-email@gmail.com
+SMTP_PASSWORD=your-app-password
+
+# Sender Information
+FROM_EMAIL=noreply@yourcompany.com
+FROM_NAME=Your Company Name
+
+# Platform URL (for email links)
+PLATFORM_URL=http://localhost:8501
+
+# Notes:
+# - For Gmail: Use App Password (not regular password)
+# - For Outlook: Use smtp-mail.outlook.com:587
+# - For company email: Check with your IT department
+# - SMTP_PASSWORD should be an app-specific password for security

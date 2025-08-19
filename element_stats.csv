@@ -1,0 +1,9 @@
+element,group,avg_score,std_score,count,strength,development_area,silent_gap
+Future Capability,ALL,4.0,0.816496580927726,4,False,False,False
+Integration with Talent,ALL,4.0,0.816496580927726,4,False,False,False
+Learning Culture,ALL,3.5,1.2909944487358056,4,False,False,False
+Learning Design,ALL,3.5,0.5773502691896257,4,False,False,False
+Learning Impact,ALL,3.5,0.5773502691896257,4,False,False,False
+Needs Analysis,ALL,3.5,1.2909944487358056,4,False,False,False
+Platform and Tools,ALL,4.25,0.9574271077563381,4,True,False,False
+Strategic Connection,ALL,3.75,0.9574271077563381,4,False,False,False

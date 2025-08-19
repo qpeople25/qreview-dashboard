@@ -1,0 +1,641 @@
+respondent_id,group,element,subelement,score,timestamp
+SLT_1,SLT,Strategic Connection,Alignment with business strategy,2,2024-06-01T10:00:00Z
+SLT_1,SLT,Strategic Connection,Leadership support for learning,3,2024-06-01T10:00:00Z
+SLT_1,SLT,Strategic Connection,Future capability planning,5,2024-06-01T10:00:00Z
+SLT_1,SLT,Strategic Connection,Business stakeholder input,4,2024-06-01T10:00:00Z
+SLT_1,SLT,Needs Analysis,Prioritization by impact,3,2024-06-01T10:00:00Z
+SLT_1,SLT,Needs Analysis,Data and discussion mix,2,2024-06-01T10:00:00Z
+SLT_1,SLT,Needs Analysis,Ongoing analysis process,5,2024-06-01T10:00:00Z
+SLT_1,SLT,Needs Analysis,Insights drive decisions,3,2024-06-01T10:00:00Z
+SLT_1,SLT,Learning Design,Tailored to learner needs,1,2024-06-01T10:00:00Z
+SLT_1,SLT,Learning Design,Content relevance and quality,2,2024-06-01T10:00:00Z
+SLT_1,SLT,Learning Design,Engaging delivery formats,3,2024-06-01T10:00:00Z
+SLT_1,SLT,Learning Design,Practical application,3,2024-06-01T10:00:00Z
+SLT_1,SLT,Learning Culture,Psychological safety,2,2024-06-01T10:00:00Z
+SLT_1,SLT,Learning Culture,Manager support for learning,4,2024-06-01T10:00:00Z
+SLT_1,SLT,Learning Culture,Time/space for learning,1,2024-06-01T10:00:00Z
+SLT_1,SLT,Learning Culture,Shared responsibility,5,2024-06-01T10:00:00Z
+SLT_1,SLT,Platform and Tools,Ease of navigation,5,2024-06-01T10:00:00Z
+SLT_1,SLT,Platform and Tools,Integration with daily work,2,2024-06-01T10:00:00Z
+SLT_1,SLT,Platform and Tools,Insightful data usage,5,2024-06-01T10:00:00Z
+SLT_1,SLT,Platform and Tools,"Modern, relevant tools",5,2024-06-01T10:00:00Z
+SLT_1,SLT,Integration with Talent,Learning-to-career connection,5,2024-06-01T10:00:00Z
+SLT_1,SLT,Integration with Talent,Performance-driven development,4,2024-06-01T10:00:00Z
+SLT_1,SLT,Integration with Talent,Role in succession planning,1,2024-06-01T10:00:00Z
+SLT_1,SLT,Integration with Talent,Integration with HR systems,5,2024-06-01T10:00:00Z
+SLT_1,SLT,Learning Impact,Beyond attendance tracking,2,2024-06-01T10:00:00Z
+SLT_1,SLT,Learning Impact,Connection to business metrics,4,2024-06-01T10:00:00Z
+SLT_1,SLT,Learning Impact,Observed behavior change,3,2024-06-01T10:00:00Z
+SLT_1,SLT,Learning Impact,Continuous feedback loop,5,2024-06-01T10:00:00Z
+SLT_1,SLT,Future Capability,Future skill planning,3,2024-06-01T10:00:00Z
+SLT_1,SLT,Future Capability,Trend-based strategy,1,2024-06-01T10:00:00Z
+SLT_1,SLT,Future Capability,Supports growth mindset,1,2024-06-01T10:00:00Z
+SLT_1,SLT,Future Capability,Capability roadmap,2,2024-06-01T10:00:00Z
+SLT_2,SLT,Strategic Connection,Alignment with business strategy,3,2024-06-01T10:01:00Z
+SLT_2,SLT,Strategic Connection,Leadership support for learning,3,2024-06-01T10:01:00Z
+SLT_2,SLT,Strategic Connection,Future capability planning,3,2024-06-01T10:01:00Z
+SLT_2,SLT,Strategic Connection,Business stakeholder input,2,2024-06-01T10:01:00Z
+SLT_2,SLT,Needs Analysis,Prioritization by impact,5,2024-06-01T10:01:00Z
+SLT_2,SLT,Needs Analysis,Data and discussion mix,3,2024-06-01T10:01:00Z
+SLT_2,SLT,Needs Analysis,Ongoing analysis process,2,2024-06-01T10:01:00Z
+SLT_2,SLT,Needs Analysis,Insights drive decisions,4,2024-06-01T10:01:00Z
+SLT_2,SLT,Learning Design,Tailored to learner needs,5,2024-06-01T10:01:00Z
+SLT_2,SLT,Learning Design,Content relevance and quality,1,2024-06-01T10:01:00Z
+SLT_2,SLT,Learning Design,Engaging delivery formats,2,2024-06-01T10:01:00Z
+SLT_2,SLT,Learning Design,Practical application,4,2024-06-01T10:01:00Z
+SLT_2,SLT,Learning Culture,Psychological safety,5,2024-06-01T10:01:00Z
+SLT_2,SLT,Learning Culture,Manager support for learning,4,2024-06-01T10:01:00Z
+SLT_2,SLT,Learning Culture,Time/space for learning,3,2024-06-01T10:01:00Z
+SLT_2,SLT,Learning Culture,Shared responsibility,1,2024-06-01T10:01:00Z
+SLT_2,SLT,Platform and Tools,Ease of navigation,1,2024-06-01T10:01:00Z
+SLT_2,SLT,Platform and Tools,Integration with daily work,4,2024-06-01T10:01:00Z
+SLT_2,SLT,Platform and Tools,Insightful data usage,2,2024-06-01T10:01:00Z
+SLT_2,SLT,Platform and Tools,"Modern, relevant tools",5,2024-06-01T10:01:00Z
+SLT_2,SLT,Integration with Talent,Learning-to-career connection,5,2024-06-01T10:01:00Z
+SLT_2,SLT,Integration with Talent,Performance-driven development,4,2024-06-01T10:01:00Z
+SLT_2,SLT,Integration with Talent,Role in succession planning,2,2024-06-01T10:01:00Z
+SLT_2,SLT,Integration with Talent,Integration with HR systems,2,2024-06-01T10:01:00Z
+SLT_2,SLT,Learning Impact,Beyond attendance tracking,2,2024-06-01T10:01:00Z
+SLT_2,SLT,Learning Impact,Connection to business metrics,1,2024-06-01T10:01:00Z
+SLT_2,SLT,Learning Impact,Observed behavior change,2,2024-06-01T10:01:00Z
+SLT_2,SLT,Learning Impact,Continuous feedback loop,5,2024-06-01T10:01:00Z
+SLT_2,SLT,Future Capability,Future skill planning,3,2024-06-01T10:01:00Z
+SLT_2,SLT,Future Capability,Trend-based strategy,4,2024-06-01T10:01:00Z
+SLT_2,SLT,Future Capability,Supports growth mindset,3,2024-06-01T10:01:00Z
+SLT_2,SLT,Future Capability,Capability roadmap,4,2024-06-01T10:01:00Z
+SLT_3,SLT,Strategic Connection,Alignment with business strategy,2,2024-06-01T10:02:00Z
+SLT_3,SLT,Strategic Connection,Leadership support for learning,5,2024-06-01T10:02:00Z
+SLT_3,SLT,Strategic Connection,Future capability planning,5,2024-06-01T10:02:00Z
+SLT_3,SLT,Strategic Connection,Business stakeholder input,1,2024-06-01T10:02:00Z
+SLT_3,SLT,Needs Analysis,Prioritization by impact,5,2024-06-01T10:02:00Z
+SLT_3,SLT,Needs Analysis,Data and discussion mix,4,2024-06-01T10:02:00Z
+SLT_3,SLT,Needs Analysis,Ongoing analysis process,2,2024-06-01T10:02:00Z
+SLT_3,SLT,Needs Analysis,Insights drive decisions,5,2024-06-01T10:02:00Z
+SLT_3,SLT,Learning Design,Tailored to learner needs,4,2024-06-01T10:02:00Z
+SLT_3,SLT,Learning Design,Content relevance and quality,5,2024-06-01T10:02:00Z
+SLT_3,SLT,Learning Design,Engaging delivery formats,2,2024-06-01T10:02:00Z
+SLT_3,SLT,Learning Design,Practical application,5,2024-06-01T10:02:00Z
+SLT_3,SLT,Learning Culture,Psychological safety,2,2024-06-01T10:02:00Z
+SLT_3,SLT,Learning Culture,Manager support for learning,1,2024-06-01T10:02:00Z
+SLT_3,SLT,Learning Culture,Time/space for learning,4,2024-06-01T10:02:00Z
+SLT_3,SLT,Learning Culture,Shared responsibility,5,2024-06-01T10:02:00Z
+SLT_3,SLT,Platform and Tools,Ease of navigation,3,2024-06-01T10:02:00Z
+SLT_3,SLT,Platform and Tools,Integration with daily work,5,2024-06-01T10:02:00Z
+SLT_3,SLT,Platform and Tools,Insightful data usage,5,2024-06-01T10:02:00Z
+SLT_3,SLT,Platform and Tools,"Modern, relevant tools",1,2024-06-01T10:02:00Z
+SLT_3,SLT,Integration with Talent,Learning-to-career connection,1,2024-06-01T10:02:00Z
+SLT_3,SLT,Integration with Talent,Performance-driven development,4,2024-06-01T10:02:00Z
+SLT_3,SLT,Integration with Talent,Role in succession planning,4,2024-06-01T10:02:00Z
+SLT_3,SLT,Integration with Talent,Integration with HR systems,4,2024-06-01T10:02:00Z
+SLT_3,SLT,Learning Impact,Beyond attendance tracking,4,2024-06-01T10:02:00Z
+SLT_3,SLT,Learning Impact,Connection to business metrics,5,2024-06-01T10:02:00Z
+SLT_3,SLT,Learning Impact,Observed behavior change,4,2024-06-01T10:02:00Z
+SLT_3,SLT,Learning Impact,Continuous feedback loop,5,2024-06-01T10:02:00Z
+SLT_3,SLT,Future Capability,Future skill planning,1,2024-06-01T10:02:00Z
+SLT_3,SLT,Future Capability,Trend-based strategy,5,2024-06-01T10:02:00Z
+SLT_3,SLT,Future Capability,Supports growth mindset,3,2024-06-01T10:02:00Z
+SLT_3,SLT,Future Capability,Capability roadmap,5,2024-06-01T10:02:00Z
+SLT_4,SLT,Strategic Connection,Alignment with business strategy,5,2024-06-01T10:03:00Z
+SLT_4,SLT,Strategic Connection,Leadership support for learning,1,2024-06-01T10:03:00Z
+SLT_4,SLT,Strategic Connection,Future capability planning,3,2024-06-01T10:03:00Z
+SLT_4,SLT,Strategic Connection,Business stakeholder input,4,2024-06-01T10:03:00Z
+SLT_4,SLT,Needs Analysis,Prioritization by impact,5,2024-06-01T10:03:00Z
+SLT_4,SLT,Needs Analysis,Data and discussion mix,4,2024-06-01T10:03:00Z
+SLT_4,SLT,Needs Analysis,Ongoing analysis process,1,2024-06-01T10:03:00Z
+SLT_4,SLT,Needs Analysis,Insights drive decisions,5,2024-06-01T10:03:00Z
+SLT_4,SLT,Learning Design,Tailored to learner needs,3,2024-06-01T10:03:00Z
+SLT_4,SLT,Learning Design,Content relevance and quality,3,2024-06-01T10:03:00Z
+SLT_4,SLT,Learning Design,Engaging delivery formats,3,2024-06-01T10:03:00Z
+SLT_4,SLT,Learning Design,Practical application,5,2024-06-01T10:03:00Z
+SLT_4,SLT,Learning Culture,Psychological safety,1,2024-06-01T10:03:00Z
+SLT_4,SLT,Learning Culture,Manager support for learning,3,2024-06-01T10:03:00Z
+SLT_4,SLT,Learning Culture,Time/space for learning,4,2024-06-01T10:03:00Z
+SLT_4,SLT,Learning Culture,Shared responsibility,2,2024-06-01T10:03:00Z
+SLT_4,SLT,Platform and Tools,Ease of navigation,2,2024-06-01T10:03:00Z
+SLT_4,SLT,Platform and Tools,Integration with daily work,1,2024-06-01T10:03:00Z
+SLT_4,SLT,Platform and Tools,Insightful data usage,2,2024-06-01T10:03:00Z
+SLT_4,SLT,Platform and Tools,"Modern, relevant tools",4,2024-06-01T10:03:00Z
+SLT_4,SLT,Integration with Talent,Learning-to-career connection,1,2024-06-01T10:03:00Z
+SLT_4,SLT,Integration with Talent,Performance-driven development,4,2024-06-01T10:03:00Z
+SLT_4,SLT,Integration with Talent,Role in succession planning,4,2024-06-01T10:03:00Z
+SLT_4,SLT,Integration with Talent,Integration with HR systems,2,2024-06-01T10:03:00Z
+SLT_4,SLT,Learning Impact,Beyond attendance tracking,3,2024-06-01T10:03:00Z
+SLT_4,SLT,Learning Impact,Connection to business metrics,3,2024-06-01T10:03:00Z
+SLT_4,SLT,Learning Impact,Observed behavior change,3,2024-06-01T10:03:00Z
+SLT_4,SLT,Learning Impact,Continuous feedback loop,5,2024-06-01T10:03:00Z
+SLT_4,SLT,Future Capability,Future skill planning,2,2024-06-01T10:03:00Z
+SLT_4,SLT,Future Capability,Trend-based strategy,4,2024-06-01T10:03:00Z
+SLT_4,SLT,Future Capability,Supports growth mindset,5,2024-06-01T10:03:00Z
+SLT_4,SLT,Future Capability,Capability roadmap,2,2024-06-01T10:03:00Z
+SLT_5,SLT,Strategic Connection,Alignment with business strategy,5,2024-06-01T10:04:00Z
+SLT_5,SLT,Strategic Connection,Leadership support for learning,5,2024-06-01T10:04:00Z
+SLT_5,SLT,Strategic Connection,Future capability planning,5,2024-06-01T10:04:00Z
+SLT_5,SLT,Strategic Connection,Business stakeholder input,1,2024-06-01T10:04:00Z
+SLT_5,SLT,Needs Analysis,Prioritization by impact,1,2024-06-01T10:04:00Z
+SLT_5,SLT,Needs Analysis,Data and discussion mix,5,2024-06-01T10:04:00Z
+SLT_5,SLT,Needs Analysis,Ongoing analysis process,3,2024-06-01T10:04:00Z
+SLT_5,SLT,Needs Analysis,Insights drive decisions,4,2024-06-01T10:04:00Z
+SLT_5,SLT,Learning Design,Tailored to learner needs,1,2024-06-01T10:04:00Z
+SLT_5,SLT,Learning Design,Content relevance and quality,3,2024-06-01T10:04:00Z
+SLT_5,SLT,Learning Design,Engaging delivery formats,2,2024-06-01T10:04:00Z
+SLT_5,SLT,Learning Design,Practical application,4,2024-06-01T10:04:00Z
+SLT_5,SLT,Learning Culture,Psychological safety,1,2024-06-01T10:04:00Z
+SLT_5,SLT,Learning Culture,Manager support for learning,5,2024-06-01T10:04:00Z
+SLT_5,SLT,Learning Culture,Time/space for learning,3,2024-06-01T10:04:00Z
+SLT_5,SLT,Learning Culture,Shared responsibility,3,2024-06-01T10:04:00Z
+SLT_5,SLT,Platform and Tools,Ease of navigation,3,2024-06-01T10:04:00Z
+SLT_5,SLT,Platform and Tools,Integration with daily work,3,2024-06-01T10:04:00Z
+SLT_5,SLT,Platform and Tools,Insightful data usage,4,2024-06-01T10:04:00Z
+SLT_5,SLT,Platform and Tools,"Modern, relevant tools",1,2024-06-01T10:04:00Z
+SLT_5,SLT,Integration with Talent,Learning-to-career connection,4,2024-06-01T10:04:00Z
+SLT_5,SLT,Integration with Talent,Performance-driven development,3,2024-06-01T10:04:00Z
+SLT_5,SLT,Integration with Talent,Role in succession planning,3,2024-06-01T10:04:00Z
+SLT_5,SLT,Integration with Talent,Integration with HR systems,5,2024-06-01T10:04:00Z
+SLT_5,SLT,Learning Impact,Beyond attendance tracking,5,2024-06-01T10:04:00Z
+SLT_5,SLT,Learning Impact,Connection to business metrics,4,2024-06-01T10:04:00Z
+SLT_5,SLT,Learning Impact,Observed behavior change,3,2024-06-01T10:04:00Z
+SLT_5,SLT,Learning Impact,Continuous feedback loop,1,2024-06-01T10:04:00Z
+SLT_5,SLT,Future Capability,Future skill planning,3,2024-06-01T10:04:00Z
+SLT_5,SLT,Future Capability,Trend-based strategy,2,2024-06-01T10:04:00Z
+SLT_5,SLT,Future Capability,Supports growth mindset,5,2024-06-01T10:04:00Z
+SLT_5,SLT,Future Capability,Capability roadmap,2,2024-06-01T10:04:00Z
+LDT_1,LDT,Strategic Connection,Alignment with business strategy,4,2024-06-01T10:00:00Z
+LDT_1,LDT,Strategic Connection,Leadership support for learning,1,2024-06-01T10:00:00Z
+LDT_1,LDT,Strategic Connection,Future capability planning,5,2024-06-01T10:00:00Z
+LDT_1,LDT,Strategic Connection,Business stakeholder input,1,2024-06-01T10:00:00Z
+LDT_1,LDT,Needs Analysis,Prioritization by impact,2,2024-06-01T10:00:00Z
+LDT_1,LDT,Needs Analysis,Data and discussion mix,3,2024-06-01T10:00:00Z
+LDT_1,LDT,Needs Analysis,Ongoing analysis process,3,2024-06-01T10:00:00Z
+LDT_1,LDT,Needs Analysis,Insights drive decisions,1,2024-06-01T10:00:00Z
+LDT_1,LDT,Learning Design,Tailored to learner needs,1,2024-06-01T10:00:00Z
+LDT_1,LDT,Learning Design,Content relevance and quality,1,2024-06-01T10:00:00Z
+LDT_1,LDT,Learning Design,Engaging delivery formats,3,2024-06-01T10:00:00Z
+LDT_1,LDT,Learning Design,Practical application,1,2024-06-01T10:00:00Z
+LDT_1,LDT,Learning Culture,Psychological safety,5,2024-06-01T10:00:00Z
+LDT_1,LDT,Learning Culture,Manager support for learning,1,2024-06-01T10:00:00Z
+LDT_1,LDT,Learning Culture,Time/space for learning,2,2024-06-01T10:00:00Z
+LDT_1,LDT,Learning Culture,Shared responsibility,2,2024-06-01T10:00:00Z
+LDT_1,LDT,Platform and Tools,Ease of navigation,2,2024-06-01T10:00:00Z
+LDT_1,LDT,Platform and Tools,Integration with daily work,3,2024-06-01T10:00:00Z
+LDT_1,LDT,Platform and Tools,Insightful data usage,2,2024-06-01T10:00:00Z
+LDT_1,LDT,Platform and Tools,"Modern, relevant tools",2,2024-06-01T10:00:00Z
+LDT_1,LDT,Integration with Talent,Learning-to-career connection,4,2024-06-01T10:00:00Z
+LDT_1,LDT,Integration with Talent,Performance-driven development,5,2024-06-01T10:00:00Z
+LDT_1,LDT,Integration with Talent,Role in succession planning,3,2024-06-01T10:00:00Z
+LDT_1,LDT,Integration with Talent,Integration with HR systems,5,2024-06-01T10:00:00Z
+LDT_1,LDT,Learning Impact,Beyond attendance tracking,3,2024-06-01T10:00:00Z
+LDT_1,LDT,Learning Impact,Connection to business metrics,4,2024-06-01T10:00:00Z
+LDT_1,LDT,Learning Impact,Observed behavior change,5,2024-06-01T10:00:00Z
+LDT_1,LDT,Learning Impact,Continuous feedback loop,3,2024-06-01T10:00:00Z
+LDT_1,LDT,Future Capability,Future skill planning,5,2024-06-01T10:00:00Z
+LDT_1,LDT,Future Capability,Trend-based strategy,2,2024-06-01T10:00:00Z
+LDT_1,LDT,Future Capability,Supports growth mindset,1,2024-06-01T10:00:00Z
+LDT_1,LDT,Future Capability,Capability roadmap,1,2024-06-01T10:00:00Z
+LDT_2,LDT,Strategic Connection,Alignment with business strategy,1,2024-06-01T10:01:00Z
+LDT_2,LDT,Strategic Connection,Leadership support for learning,2,2024-06-01T10:01:00Z
+LDT_2,LDT,Strategic Connection,Future capability planning,2,2024-06-01T10:01:00Z
+LDT_2,LDT,Strategic Connection,Business stakeholder input,5,2024-06-01T10:01:00Z
+LDT_2,LDT,Needs Analysis,Prioritization by impact,2,2024-06-01T10:01:00Z
+LDT_2,LDT,Needs Analysis,Data and discussion mix,2,2024-06-01T10:01:00Z
+LDT_2,LDT,Needs Analysis,Ongoing analysis process,4,2024-06-01T10:01:00Z
+LDT_2,LDT,Needs Analysis,Insights drive decisions,2,2024-06-01T10:01:00Z
+LDT_2,LDT,Learning Design,Tailored to learner needs,5,2024-06-01T10:01:00Z
+LDT_2,LDT,Learning Design,Content relevance and quality,1,2024-06-01T10:01:00Z
+LDT_2,LDT,Learning Design,Engaging delivery formats,5,2024-06-01T10:01:00Z
+LDT_2,LDT,Learning Design,Practical application,5,2024-06-01T10:01:00Z
+LDT_2,LDT,Learning Culture,Psychological safety,3,2024-06-01T10:01:00Z
+LDT_2,LDT,Learning Culture,Manager support for learning,2,2024-06-01T10:01:00Z
+LDT_2,LDT,Learning Culture,Time/space for learning,4,2024-06-01T10:01:00Z
+LDT_2,LDT,Learning Culture,Shared responsibility,5,2024-06-01T10:01:00Z
+LDT_2,LDT,Platform and Tools,Ease of navigation,5,2024-06-01T10:01:00Z
+LDT_2,LDT,Platform and Tools,Integration with daily work,1,2024-06-01T10:01:00Z
+LDT_2,LDT,Platform and Tools,Insightful data usage,2,2024-06-01T10:01:00Z
+LDT_2,LDT,Platform and Tools,"Modern, relevant tools",4,2024-06-01T10:01:00Z
+LDT_2,LDT,Integration with Talent,Learning-to-career connection,3,2024-06-01T10:01:00Z
+LDT_2,LDT,Integration with Talent,Performance-driven development,3,2024-06-01T10:01:00Z
+LDT_2,LDT,Integration with Talent,Role in succession planning,3,2024-06-01T10:01:00Z
+LDT_2,LDT,Integration with Talent,Integration with HR systems,1,2024-06-01T10:01:00Z
+LDT_2,LDT,Learning Impact,Beyond attendance tracking,4,2024-06-01T10:01:00Z
+LDT_2,LDT,Learning Impact,Connection to business metrics,4,2024-06-01T10:01:00Z
+LDT_2,LDT,Learning Impact,Observed behavior change,4,2024-06-01T10:01:00Z
+LDT_2,LDT,Learning Impact,Continuous feedback loop,4,2024-06-01T10:01:00Z
+LDT_2,LDT,Future Capability,Future skill planning,3,2024-06-01T10:01:00Z
+LDT_2,LDT,Future Capability,Trend-based strategy,5,2024-06-01T10:01:00Z
+LDT_2,LDT,Future Capability,Supports growth mindset,5,2024-06-01T10:01:00Z
+LDT_2,LDT,Future Capability,Capability roadmap,2,2024-06-01T10:01:00Z
+LDT_3,LDT,Strategic Connection,Alignment with business strategy,5,2024-06-01T10:02:00Z
+LDT_3,LDT,Strategic Connection,Leadership support for learning,4,2024-06-01T10:02:00Z
+LDT_3,LDT,Strategic Connection,Future capability planning,1,2024-06-01T10:02:00Z
+LDT_3,LDT,Strategic Connection,Business stakeholder input,1,2024-06-01T10:02:00Z
+LDT_3,LDT,Needs Analysis,Prioritization by impact,5,2024-06-01T10:02:00Z
+LDT_3,LDT,Needs Analysis,Data and discussion mix,2,2024-06-01T10:02:00Z
+LDT_3,LDT,Needs Analysis,Ongoing analysis process,2,2024-06-01T10:02:00Z
+LDT_3,LDT,Needs Analysis,Insights drive decisions,5,2024-06-01T10:02:00Z
+LDT_3,LDT,Learning Design,Tailored to learner needs,5,2024-06-01T10:02:00Z
+LDT_3,LDT,Learning Design,Content relevance and quality,2,2024-06-01T10:02:00Z
+LDT_3,LDT,Learning Design,Engaging delivery formats,2,2024-06-01T10:02:00Z
+LDT_3,LDT,Learning Design,Practical application,4,2024-06-01T10:02:00Z
+LDT_3,LDT,Learning Culture,Psychological safety,2,2024-06-01T10:02:00Z
+LDT_3,LDT,Learning Culture,Manager support for learning,5,2024-06-01T10:02:00Z
+LDT_3,LDT,Learning Culture,Time/space for learning,5,2024-06-01T10:02:00Z
+LDT_3,LDT,Learning Culture,Shared responsibility,2,2024-06-01T10:02:00Z
+LDT_3,LDT,Platform and Tools,Ease of navigation,5,2024-06-01T10:02:00Z
+LDT_3,LDT,Platform and Tools,Integration with daily work,4,2024-06-01T10:02:00Z
+LDT_3,LDT,Platform and Tools,Insightful data usage,5,2024-06-01T10:02:00Z
+LDT_3,LDT,Platform and Tools,"Modern, relevant tools",3,2024-06-01T10:02:00Z
+LDT_3,LDT,Integration with Talent,Learning-to-career connection,3,2024-06-01T10:02:00Z
+LDT_3,LDT,Integration with Talent,Performance-driven development,2,2024-06-01T10:02:00Z
+LDT_3,LDT,Integration with Talent,Role in succession planning,4,2024-06-01T10:02:00Z
+LDT_3,LDT,Integration with Talent,Integration with HR systems,3,2024-06-01T10:02:00Z
+LDT_3,LDT,Learning Impact,Beyond attendance tracking,5,2024-06-01T10:02:00Z
+LDT_3,LDT,Learning Impact,Connection to business metrics,2,2024-06-01T10:02:00Z
+LDT_3,LDT,Learning Impact,Observed behavior change,5,2024-06-01T10:02:00Z
+LDT_3,LDT,Learning Impact,Continuous feedback loop,4,2024-06-01T10:02:00Z
+LDT_3,LDT,Future Capability,Future skill planning,2,2024-06-01T10:02:00Z
+LDT_3,LDT,Future Capability,Trend-based strategy,1,2024-06-01T10:02:00Z
+LDT_3,LDT,Future Capability,Supports growth mindset,1,2024-06-01T10:02:00Z
+LDT_3,LDT,Future Capability,Capability roadmap,5,2024-06-01T10:02:00Z
+LDT_4,LDT,Strategic Connection,Alignment with business strategy,3,2024-06-01T10:03:00Z
+LDT_4,LDT,Strategic Connection,Leadership support for learning,3,2024-06-01T10:03:00Z
+LDT_4,LDT,Strategic Connection,Future capability planning,1,2024-06-01T10:03:00Z
+LDT_4,LDT,Strategic Connection,Business stakeholder input,2,2024-06-01T10:03:00Z
+LDT_4,LDT,Needs Analysis,Prioritization by impact,4,2024-06-01T10:03:00Z
+LDT_4,LDT,Needs Analysis,Data and discussion mix,5,2024-06-01T10:03:00Z
+LDT_4,LDT,Needs Analysis,Ongoing analysis process,4,2024-06-01T10:03:00Z
+LDT_4,LDT,Needs Analysis,Insights drive decisions,5,2024-06-01T10:03:00Z
+LDT_4,LDT,Learning Design,Tailored to learner needs,2,2024-06-01T10:03:00Z
+LDT_4,LDT,Learning Design,Content relevance and quality,3,2024-06-01T10:03:00Z
+LDT_4,LDT,Learning Design,Engaging delivery formats,3,2024-06-01T10:03:00Z
+LDT_4,LDT,Learning Design,Practical application,5,2024-06-01T10:03:00Z
+LDT_4,LDT,Learning Culture,Psychological safety,3,2024-06-01T10:03:00Z
+LDT_4,LDT,Learning Culture,Manager support for learning,4,2024-06-01T10:03:00Z
+LDT_4,LDT,Learning Culture,Time/space for learning,1,2024-06-01T10:03:00Z
+LDT_4,LDT,Learning Culture,Shared responsibility,3,2024-06-01T10:03:00Z
+LDT_4,LDT,Platform and Tools,Ease of navigation,5,2024-06-01T10:03:00Z
+LDT_4,LDT,Platform and Tools,Integration with daily work,5,2024-06-01T10:03:00Z
+LDT_4,LDT,Platform and Tools,Insightful data usage,1,2024-06-01T10:03:00Z
+LDT_4,LDT,Platform and Tools,"Modern, relevant tools",4,2024-06-01T10:03:00Z
+LDT_4,LDT,Integration with Talent,Learning-to-career connection,3,2024-06-01T10:03:00Z
+LDT_4,LDT,Integration with Talent,Performance-driven development,4,2024-06-01T10:03:00Z
+LDT_4,LDT,Integration with Talent,Role in succession planning,5,2024-06-01T10:03:00Z
+LDT_4,LDT,Integration with Talent,Integration with HR systems,1,2024-06-01T10:03:00Z
+LDT_4,LDT,Learning Impact,Beyond attendance tracking,2,2024-06-01T10:03:00Z
+LDT_4,LDT,Learning Impact,Connection to business metrics,2,2024-06-01T10:03:00Z
+LDT_4,LDT,Learning Impact,Observed behavior change,4,2024-06-01T10:03:00Z
+LDT_4,LDT,Learning Impact,Continuous feedback loop,5,2024-06-01T10:03:00Z
+LDT_4,LDT,Future Capability,Future skill planning,3,2024-06-01T10:03:00Z
+LDT_4,LDT,Future Capability,Trend-based strategy,5,2024-06-01T10:03:00Z
+LDT_4,LDT,Future Capability,Supports growth mindset,5,2024-06-01T10:03:00Z
+LDT_4,LDT,Future Capability,Capability roadmap,1,2024-06-01T10:03:00Z
+LDT_5,LDT,Strategic Connection,Alignment with business strategy,1,2024-06-01T10:04:00Z
+LDT_5,LDT,Strategic Connection,Leadership support for learning,1,2024-06-01T10:04:00Z
+LDT_5,LDT,Strategic Connection,Future capability planning,2,2024-06-01T10:04:00Z
+LDT_5,LDT,Strategic Connection,Business stakeholder input,2,2024-06-01T10:04:00Z
+LDT_5,LDT,Needs Analysis,Prioritization by impact,2,2024-06-01T10:04:00Z
+LDT_5,LDT,Needs Analysis,Data and discussion mix,2,2024-06-01T10:04:00Z
+LDT_5,LDT,Needs Analysis,Ongoing analysis process,1,2024-06-01T10:04:00Z
+LDT_5,LDT,Needs Analysis,Insights drive decisions,5,2024-06-01T10:04:00Z
+LDT_5,LDT,Learning Design,Tailored to learner needs,4,2024-06-01T10:04:00Z
+LDT_5,LDT,Learning Design,Content relevance and quality,5,2024-06-01T10:04:00Z
+LDT_5,LDT,Learning Design,Engaging delivery formats,5,2024-06-01T10:04:00Z
+LDT_5,LDT,Learning Design,Practical application,5,2024-06-01T10:04:00Z
+LDT_5,LDT,Learning Culture,Psychological safety,5,2024-06-01T10:04:00Z
+LDT_5,LDT,Learning Culture,Manager support for learning,5,2024-06-01T10:04:00Z
+LDT_5,LDT,Learning Culture,Time/space for learning,4,2024-06-01T10:04:00Z
+LDT_5,LDT,Learning Culture,Shared responsibility,4,2024-06-01T10:04:00Z
+LDT_5,LDT,Platform and Tools,Ease of navigation,1,2024-06-01T10:04:00Z
+LDT_5,LDT,Platform and Tools,Integration with daily work,2,2024-06-01T10:04:00Z
+LDT_5,LDT,Platform and Tools,Insightful data usage,4,2024-06-01T10:04:00Z
+LDT_5,LDT,Platform and Tools,"Modern, relevant tools",2,2024-06-01T10:04:00Z
+LDT_5,LDT,Integration with Talent,Learning-to-career connection,3,2024-06-01T10:04:00Z
+LDT_5,LDT,Integration with Talent,Performance-driven development,5,2024-06-01T10:04:00Z
+LDT_5,LDT,Integration with Talent,Role in succession planning,2,2024-06-01T10:04:00Z
+LDT_5,LDT,Integration with Talent,Integration with HR systems,5,2024-06-01T10:04:00Z
+LDT_5,LDT,Learning Impact,Beyond attendance tracking,2,2024-06-01T10:04:00Z
+LDT_5,LDT,Learning Impact,Connection to business metrics,5,2024-06-01T10:04:00Z
+LDT_5,LDT,Learning Impact,Observed behavior change,4,2024-06-01T10:04:00Z
+LDT_5,LDT,Learning Impact,Continuous feedback loop,1,2024-06-01T10:04:00Z
+LDT_5,LDT,Future Capability,Future skill planning,1,2024-06-01T10:04:00Z
+LDT_5,LDT,Future Capability,Trend-based strategy,3,2024-06-01T10:04:00Z
+LDT_5,LDT,Future Capability,Supports growth mindset,5,2024-06-01T10:04:00Z
+LDT_5,LDT,Future Capability,Capability roadmap,2,2024-06-01T10:04:00Z
+MGR_1,MGR,Strategic Connection,Alignment with business strategy,1,2024-06-01T10:00:00Z
+MGR_1,MGR,Strategic Connection,Leadership support for learning,5,2024-06-01T10:00:00Z
+MGR_1,MGR,Strategic Connection,Future capability planning,1,2024-06-01T10:00:00Z
+MGR_1,MGR,Strategic Connection,Business stakeholder input,1,2024-06-01T10:00:00Z
+MGR_1,MGR,Needs Analysis,Prioritization by impact,5,2024-06-01T10:00:00Z
+MGR_1,MGR,Needs Analysis,Data and discussion mix,2,2024-06-01T10:00:00Z
+MGR_1,MGR,Needs Analysis,Ongoing analysis process,5,2024-06-01T10:00:00Z
+MGR_1,MGR,Needs Analysis,Insights drive decisions,4,2024-06-01T10:00:00Z
+MGR_1,MGR,Learning Design,Tailored to learner needs,4,2024-06-01T10:00:00Z
+MGR_1,MGR,Learning Design,Content relevance and quality,2,2024-06-01T10:00:00Z
+MGR_1,MGR,Learning Design,Engaging delivery formats,4,2024-06-01T10:00:00Z
+MGR_1,MGR,Learning Design,Practical application,3,2024-06-01T10:00:00Z
+MGR_1,MGR,Learning Culture,Psychological safety,1,2024-06-01T10:00:00Z
+MGR_1,MGR,Learning Culture,Manager support for learning,2,2024-06-01T10:00:00Z
+MGR_1,MGR,Learning Culture,Time/space for learning,1,2024-06-01T10:00:00Z
+MGR_1,MGR,Learning Culture,Shared responsibility,4,2024-06-01T10:00:00Z
+MGR_1,MGR,Platform and Tools,Ease of navigation,1,2024-06-01T10:00:00Z
+MGR_1,MGR,Platform and Tools,Integration with daily work,1,2024-06-01T10:00:00Z
+MGR_1,MGR,Platform and Tools,Insightful data usage,4,2024-06-01T10:00:00Z
+MGR_1,MGR,Platform and Tools,"Modern, relevant tools",2,2024-06-01T10:00:00Z
+MGR_1,MGR,Integration with Talent,Learning-to-career connection,2,2024-06-01T10:00:00Z
+MGR_1,MGR,Integration with Talent,Performance-driven development,1,2024-06-01T10:00:00Z
+MGR_1,MGR,Integration with Talent,Role in succession planning,4,2024-06-01T10:00:00Z
+MGR_1,MGR,Integration with Talent,Integration with HR systems,3,2024-06-01T10:00:00Z
+MGR_1,MGR,Learning Impact,Beyond attendance tracking,2,2024-06-01T10:00:00Z
+MGR_1,MGR,Learning Impact,Connection to business metrics,5,2024-06-01T10:00:00Z
+MGR_1,MGR,Learning Impact,Observed behavior change,2,2024-06-01T10:00:00Z
+MGR_1,MGR,Learning Impact,Continuous feedback loop,5,2024-06-01T10:00:00Z
+MGR_1,MGR,Future Capability,Future skill planning,3,2024-06-01T10:00:00Z
+MGR_1,MGR,Future Capability,Trend-based strategy,2,2024-06-01T10:00:00Z
+MGR_1,MGR,Future Capability,Supports growth mindset,5,2024-06-01T10:00:00Z
+MGR_1,MGR,Future Capability,Capability roadmap,2,2024-06-01T10:00:00Z
+MGR_2,MGR,Strategic Connection,Alignment with business strategy,1,2024-06-01T10:01:00Z
+MGR_2,MGR,Strategic Connection,Leadership support for learning,1,2024-06-01T10:01:00Z
+MGR_2,MGR,Strategic Connection,Future capability planning,4,2024-06-01T10:01:00Z
+MGR_2,MGR,Strategic Connection,Business stakeholder input,1,2024-06-01T10:01:00Z
+MGR_2,MGR,Needs Analysis,Prioritization by impact,2,2024-06-01T10:01:00Z
+MGR_2,MGR,Needs Analysis,Data and discussion mix,3,2024-06-01T10:01:00Z
+MGR_2,MGR,Needs Analysis,Ongoing analysis process,4,2024-06-01T10:01:00Z
+MGR_2,MGR,Needs Analysis,Insights drive decisions,1,2024-06-01T10:01:00Z
+MGR_2,MGR,Learning Design,Tailored to learner needs,3,2024-06-01T10:01:00Z
+MGR_2,MGR,Learning Design,Content relevance and quality,3,2024-06-01T10:01:00Z
+MGR_2,MGR,Learning Design,Engaging delivery formats,1,2024-06-01T10:01:00Z
+MGR_2,MGR,Learning Design,Practical application,2,2024-06-01T10:01:00Z
+MGR_2,MGR,Learning Culture,Psychological safety,4,2024-06-01T10:01:00Z
+MGR_2,MGR,Learning Culture,Manager support for learning,2,2024-06-01T10:01:00Z
+MGR_2,MGR,Learning Culture,Time/space for learning,5,2024-06-01T10:01:00Z
+MGR_2,MGR,Learning Culture,Shared responsibility,3,2024-06-01T10:01:00Z
+MGR_2,MGR,Platform and Tools,Ease of navigation,2,2024-06-01T10:01:00Z
+MGR_2,MGR,Platform and Tools,Integration with daily work,5,2024-06-01T10:01:00Z
+MGR_2,MGR,Platform and Tools,Insightful data usage,2,2024-06-01T10:01:00Z
+MGR_2,MGR,Platform and Tools,"Modern, relevant tools",1,2024-06-01T10:01:00Z
+MGR_2,MGR,Integration with Talent,Learning-to-career connection,5,2024-06-01T10:01:00Z
+MGR_2,MGR,Integration with Talent,Performance-driven development,3,2024-06-01T10:01:00Z
+MGR_2,MGR,Integration with Talent,Role in succession planning,3,2024-06-01T10:01:00Z
+MGR_2,MGR,Integration with Talent,Integration with HR systems,3,2024-06-01T10:01:00Z
+MGR_2,MGR,Learning Impact,Beyond attendance tracking,4,2024-06-01T10:01:00Z
+MGR_2,MGR,Learning Impact,Connection to business metrics,4,2024-06-01T10:01:00Z
+MGR_2,MGR,Learning Impact,Observed behavior change,5,2024-06-01T10:01:00Z
+MGR_2,MGR,Learning Impact,Continuous feedback loop,3,2024-06-01T10:01:00Z
+MGR_2,MGR,Future Capability,Future skill planning,2,2024-06-01T10:01:00Z
+MGR_2,MGR,Future Capability,Trend-based strategy,3,2024-06-01T10:01:00Z
+MGR_2,MGR,Future Capability,Supports growth mindset,2,2024-06-01T10:01:00Z
+MGR_2,MGR,Future Capability,Capability roadmap,1,2024-06-01T10:01:00Z
+MGR_3,MGR,Strategic Connection,Alignment with business strategy,4,2024-06-01T10:02:00Z
+MGR_3,MGR,Strategic Connection,Leadership support for learning,2,2024-06-01T10:02:00Z
+MGR_3,MGR,Strategic Connection,Future capability planning,2,2024-06-01T10:02:00Z
+MGR_3,MGR,Strategic Connection,Business stakeholder input,1,2024-06-01T10:02:00Z
+MGR_3,MGR,Needs Analysis,Prioritization by impact,3,2024-06-01T10:02:00Z
+MGR_3,MGR,Needs Analysis,Data and discussion mix,4,2024-06-01T10:02:00Z
+MGR_3,MGR,Needs Analysis,Ongoing analysis process,3,2024-06-01T10:02:00Z
+MGR_3,MGR,Needs Analysis,Insights drive decisions,1,2024-06-01T10:02:00Z
+MGR_3,MGR,Learning Design,Tailored to learner needs,2,2024-06-01T10:02:00Z
+MGR_3,MGR,Learning Design,Content relevance and quality,4,2024-06-01T10:02:00Z
+MGR_3,MGR,Learning Design,Engaging delivery formats,2,2024-06-01T10:02:00Z
+MGR_3,MGR,Learning Design,Practical application,1,2024-06-01T10:02:00Z
+MGR_3,MGR,Learning Culture,Psychological safety,4,2024-06-01T10:02:00Z
+MGR_3,MGR,Learning Culture,Manager support for learning,4,2024-06-01T10:02:00Z
+MGR_3,MGR,Learning Culture,Time/space for learning,3,2024-06-01T10:02:00Z
+MGR_3,MGR,Learning Culture,Shared responsibility,1,2024-06-01T10:02:00Z
+MGR_3,MGR,Platform and Tools,Ease of navigation,3,2024-06-01T10:02:00Z
+MGR_3,MGR,Platform and Tools,Integration with daily work,4,2024-06-01T10:02:00Z
+MGR_3,MGR,Platform and Tools,Insightful data usage,2,2024-06-01T10:02:00Z
+MGR_3,MGR,Platform and Tools,"Modern, relevant tools",2,2024-06-01T10:02:00Z
+MGR_3,MGR,Integration with Talent,Learning-to-career connection,4,2024-06-01T10:02:00Z
+MGR_3,MGR,Integration with Talent,Performance-driven development,3,2024-06-01T10:02:00Z
+MGR_3,MGR,Integration with Talent,Role in succession planning,2,2024-06-01T10:02:00Z
+MGR_3,MGR,Integration with Talent,Integration with HR systems,5,2024-06-01T10:02:00Z
+MGR_3,MGR,Learning Impact,Beyond attendance tracking,1,2024-06-01T10:02:00Z
+MGR_3,MGR,Learning Impact,Connection to business metrics,4,2024-06-01T10:02:00Z
+MGR_3,MGR,Learning Impact,Observed behavior change,5,2024-06-01T10:02:00Z
+MGR_3,MGR,Learning Impact,Continuous feedback loop,5,2024-06-01T10:02:00Z
+MGR_3,MGR,Future Capability,Future skill planning,4,2024-06-01T10:02:00Z
+MGR_3,MGR,Future Capability,Trend-based strategy,4,2024-06-01T10:02:00Z
+MGR_3,MGR,Future Capability,Supports growth mindset,2,2024-06-01T10:02:00Z
+MGR_3,MGR,Future Capability,Capability roadmap,2,2024-06-01T10:02:00Z
+MGR_4,MGR,Strategic Connection,Alignment with business strategy,2,2024-06-01T10:03:00Z
+MGR_4,MGR,Strategic Connection,Leadership support for learning,4,2024-06-01T10:03:00Z
+MGR_4,MGR,Strategic Connection,Future capability planning,3,2024-06-01T10:03:00Z
+MGR_4,MGR,Strategic Connection,Business stakeholder input,4,2024-06-01T10:03:00Z
+MGR_4,MGR,Needs Analysis,Prioritization by impact,1,2024-06-01T10:03:00Z
+MGR_4,MGR,Needs Analysis,Data and discussion mix,3,2024-06-01T10:03:00Z
+MGR_4,MGR,Needs Analysis,Ongoing analysis process,4,2024-06-01T10:03:00Z
+MGR_4,MGR,Needs Analysis,Insights drive decisions,1,2024-06-01T10:03:00Z
+MGR_4,MGR,Learning Design,Tailored to learner needs,4,2024-06-01T10:03:00Z
+MGR_4,MGR,Learning Design,Content relevance and quality,5,2024-06-01T10:03:00Z
+MGR_4,MGR,Learning Design,Engaging delivery formats,5,2024-06-01T10:03:00Z
+MGR_4,MGR,Learning Design,Practical application,5,2024-06-01T10:03:00Z
+MGR_4,MGR,Learning Culture,Psychological safety,3,2024-06-01T10:03:00Z
+MGR_4,MGR,Learning Culture,Manager support for learning,5,2024-06-01T10:03:00Z
+MGR_4,MGR,Learning Culture,Time/space for learning,5,2024-06-01T10:03:00Z
+MGR_4,MGR,Learning Culture,Shared responsibility,3,2024-06-01T10:03:00Z
+MGR_4,MGR,Platform and Tools,Ease of navigation,5,2024-06-01T10:03:00Z
+MGR_4,MGR,Platform and Tools,Integration with daily work,3,2024-06-01T10:03:00Z
+MGR_4,MGR,Platform and Tools,Insightful data usage,1,2024-06-01T10:03:00Z
+MGR_4,MGR,Platform and Tools,"Modern, relevant tools",3,2024-06-01T10:03:00Z
+MGR_4,MGR,Integration with Talent,Learning-to-career connection,4,2024-06-01T10:03:00Z
+MGR_4,MGR,Integration with Talent,Performance-driven development,1,2024-06-01T10:03:00Z
+MGR_4,MGR,Integration with Talent,Role in succession planning,1,2024-06-01T10:03:00Z
+MGR_4,MGR,Integration with Talent,Integration with HR systems,2,2024-06-01T10:03:00Z
+MGR_4,MGR,Learning Impact,Beyond attendance tracking,2,2024-06-01T10:03:00Z
+MGR_4,MGR,Learning Impact,Connection to business metrics,2,2024-06-01T10:03:00Z
+MGR_4,MGR,Learning Impact,Observed behavior change,2,2024-06-01T10:03:00Z
+MGR_4,MGR,Learning Impact,Continuous feedback loop,2,2024-06-01T10:03:00Z
+MGR_4,MGR,Future Capability,Future skill planning,2,2024-06-01T10:03:00Z
+MGR_4,MGR,Future Capability,Trend-based strategy,5,2024-06-01T10:03:00Z
+MGR_4,MGR,Future Capability,Supports growth mindset,1,2024-06-01T10:03:00Z
+MGR_4,MGR,Future Capability,Capability roadmap,4,2024-06-01T10:03:00Z
+MGR_5,MGR,Strategic Connection,Alignment with business strategy,3,2024-06-01T10:04:00Z
+MGR_5,MGR,Strategic Connection,Leadership support for learning,2,2024-06-01T10:04:00Z
+MGR_5,MGR,Strategic Connection,Future capability planning,5,2024-06-01T10:04:00Z
+MGR_5,MGR,Strategic Connection,Business stakeholder input,2,2024-06-01T10:04:00Z
+MGR_5,MGR,Needs Analysis,Prioritization by impact,3,2024-06-01T10:04:00Z
+MGR_5,MGR,Needs Analysis,Data and discussion mix,3,2024-06-01T10:04:00Z
+MGR_5,MGR,Needs Analysis,Ongoing analysis process,3,2024-06-01T10:04:00Z
+MGR_5,MGR,Needs Analysis,Insights drive decisions,3,2024-06-01T10:04:00Z
+MGR_5,MGR,Learning Design,Tailored to learner needs,3,2024-06-01T10:04:00Z
+MGR_5,MGR,Learning Design,Content relevance and quality,3,2024-06-01T10:04:00Z
+MGR_5,MGR,Learning Design,Engaging delivery formats,5,2024-06-01T10:04:00Z
+MGR_5,MGR,Learning Design,Practical application,2,2024-06-01T10:04:00Z
+MGR_5,MGR,Learning Culture,Psychological safety,3,2024-06-01T10:04:00Z
+MGR_5,MGR,Learning Culture,Manager support for learning,4,2024-06-01T10:04:00Z
+MGR_5,MGR,Learning Culture,Time/space for learning,2,2024-06-01T10:04:00Z
+MGR_5,MGR,Learning Culture,Shared responsibility,5,2024-06-01T10:04:00Z
+MGR_5,MGR,Platform and Tools,Ease of navigation,1,2024-06-01T10:04:00Z
+MGR_5,MGR,Platform and Tools,Integration with daily work,2,2024-06-01T10:04:00Z
+MGR_5,MGR,Platform and Tools,Insightful data usage,2,2024-06-01T10:04:00Z
+MGR_5,MGR,Platform and Tools,"Modern, relevant tools",3,2024-06-01T10:04:00Z
+MGR_5,MGR,Integration with Talent,Learning-to-career connection,4,2024-06-01T10:04:00Z
+MGR_5,MGR,Integration with Talent,Performance-driven development,2,2024-06-01T10:04:00Z
+MGR_5,MGR,Integration with Talent,Role in succession planning,1,2024-06-01T10:04:00Z
+MGR_5,MGR,Integration with Talent,Integration with HR systems,4,2024-06-01T10:04:00Z
+MGR_5,MGR,Learning Impact,Beyond attendance tracking,1,2024-06-01T10:04:00Z
+MGR_5,MGR,Learning Impact,Connection to business metrics,2,2024-06-01T10:04:00Z
+MGR_5,MGR,Learning Impact,Observed behavior change,2,2024-06-01T10:04:00Z
+MGR_5,MGR,Learning Impact,Continuous feedback loop,3,2024-06-01T10:04:00Z
+MGR_5,MGR,Future Capability,Future skill planning,4,2024-06-01T10:04:00Z
+MGR_5,MGR,Future Capability,Trend-based strategy,2,2024-06-01T10:04:00Z
+MGR_5,MGR,Future Capability,Supports growth mindset,3,2024-06-01T10:04:00Z
+MGR_5,MGR,Future Capability,Capability roadmap,2,2024-06-01T10:04:00Z
+LNR_1,LNR,Strategic Connection,Alignment with business strategy,2,2024-06-01T10:00:00Z
+LNR_1,LNR,Strategic Connection,Leadership support for learning,5,2024-06-01T10:00:00Z
+LNR_1,LNR,Strategic Connection,Future capability planning,5,2024-06-01T10:00:00Z
+LNR_1,LNR,Strategic Connection,Business stakeholder input,3,2024-06-01T10:00:00Z
+LNR_1,LNR,Needs Analysis,Prioritization by impact,4,2024-06-01T10:00:00Z
+LNR_1,LNR,Needs Analysis,Data and discussion mix,2,2024-06-01T10:00:00Z
+LNR_1,LNR,Needs Analysis,Ongoing analysis process,1,2024-06-01T10:00:00Z
+LNR_1,LNR,Needs Analysis,Insights drive decisions,5,2024-06-01T10:00:00Z
+LNR_1,LNR,Learning Design,Tailored to learner needs,2,2024-06-01T10:00:00Z
+LNR_1,LNR,Learning Design,Content relevance and quality,2,2024-06-01T10:00:00Z
+LNR_1,LNR,Learning Design,Engaging delivery formats,3,2024-06-01T10:00:00Z
+LNR_1,LNR,Learning Design,Practical application,5,2024-06-01T10:00:00Z
+LNR_1,LNR,Learning Culture,Psychological safety,3,2024-06-01T10:00:00Z
+LNR_1,LNR,Learning Culture,Manager support for learning,4,2024-06-01T10:00:00Z
+LNR_1,LNR,Learning Culture,Time/space for learning,3,2024-06-01T10:00:00Z
+LNR_1,LNR,Learning Culture,Shared responsibility,4,2024-06-01T10:00:00Z
+LNR_1,LNR,Platform and Tools,Ease of navigation,2,2024-06-01T10:00:00Z
+LNR_1,LNR,Platform and Tools,Integration with daily work,4,2024-06-01T10:00:00Z
+LNR_1,LNR,Platform and Tools,Insightful data usage,5,2024-06-01T10:00:00Z
+LNR_1,LNR,Platform and Tools,"Modern, relevant tools",1,2024-06-01T10:00:00Z
+LNR_1,LNR,Integration with Talent,Learning-to-career connection,4,2024-06-01T10:00:00Z
+LNR_1,LNR,Integration with Talent,Performance-driven development,2,2024-06-01T10:00:00Z
+LNR_1,LNR,Integration with Talent,Role in succession planning,2,2024-06-01T10:00:00Z
+LNR_1,LNR,Integration with Talent,Integration with HR systems,2,2024-06-01T10:00:00Z
+LNR_1,LNR,Learning Impact,Beyond attendance tracking,1,2024-06-01T10:00:00Z
+LNR_1,LNR,Learning Impact,Connection to business metrics,5,2024-06-01T10:00:00Z
+LNR_1,LNR,Learning Impact,Observed behavior change,3,2024-06-01T10:00:00Z
+LNR_1,LNR,Learning Impact,Continuous feedback loop,4,2024-06-01T10:00:00Z
+LNR_1,LNR,Future Capability,Future skill planning,1,2024-06-01T10:00:00Z
+LNR_1,LNR,Future Capability,Trend-based strategy,1,2024-06-01T10:00:00Z
+LNR_1,LNR,Future Capability,Supports growth mindset,2,2024-06-01T10:00:00Z
+LNR_1,LNR,Future Capability,Capability roadmap,4,2024-06-01T10:00:00Z
+LNR_2,LNR,Strategic Connection,Alignment with business strategy,2,2024-06-01T10:01:00Z
+LNR_2,LNR,Strategic Connection,Leadership support for learning,5,2024-06-01T10:01:00Z
+LNR_2,LNR,Strategic Connection,Future capability planning,4,2024-06-01T10:01:00Z
+LNR_2,LNR,Strategic Connection,Business stakeholder input,3,2024-06-01T10:01:00Z
+LNR_2,LNR,Needs Analysis,Prioritization by impact,5,2024-06-01T10:01:00Z
+LNR_2,LNR,Needs Analysis,Data and discussion mix,5,2024-06-01T10:01:00Z
+LNR_2,LNR,Needs Analysis,Ongoing analysis process,3,2024-06-01T10:01:00Z
+LNR_2,LNR,Needs Analysis,Insights drive decisions,2,2024-06-01T10:01:00Z
+LNR_2,LNR,Learning Design,Tailored to learner needs,5,2024-06-01T10:01:00Z
+LNR_2,LNR,Learning Design,Content relevance and quality,2,2024-06-01T10:01:00Z
+LNR_2,LNR,Learning Design,Engaging delivery formats,3,2024-06-01T10:01:00Z
+LNR_2,LNR,Learning Design,Practical application,3,2024-06-01T10:01:00Z
+LNR_2,LNR,Learning Culture,Psychological safety,1,2024-06-01T10:01:00Z
+LNR_2,LNR,Learning Culture,Manager support for learning,5,2024-06-01T10:01:00Z
+LNR_2,LNR,Learning Culture,Time/space for learning,2,2024-06-01T10:01:00Z
+LNR_2,LNR,Learning Culture,Shared responsibility,1,2024-06-01T10:01:00Z
+LNR_2,LNR,Platform and Tools,Ease of navigation,4,2024-06-01T10:01:00Z
+LNR_2,LNR,Platform and Tools,Integration with daily work,3,2024-06-01T10:01:00Z
+LNR_2,LNR,Platform and Tools,Insightful data usage,2,2024-06-01T10:01:00Z
+LNR_2,LNR,Platform and Tools,"Modern, relevant tools",3,2024-06-01T10:01:00Z
+LNR_2,LNR,Integration with Talent,Learning-to-career connection,4,2024-06-01T10:01:00Z
+LNR_2,LNR,Integration with Talent,Performance-driven development,1,2024-06-01T10:01:00Z
+LNR_2,LNR,Integration with Talent,Role in succession planning,5,2024-06-01T10:01:00Z
+LNR_2,LNR,Integration with Talent,Integration with HR systems,2,2024-06-01T10:01:00Z
+LNR_2,LNR,Learning Impact,Beyond attendance tracking,2,2024-06-01T10:01:00Z
+LNR_2,LNR,Learning Impact,Connection to business metrics,5,2024-06-01T10:01:00Z
+LNR_2,LNR,Learning Impact,Observed behavior change,3,2024-06-01T10:01:00Z
+LNR_2,LNR,Learning Impact,Continuous feedback loop,4,2024-06-01T10:01:00Z
+LNR_2,LNR,Future Capability,Future skill planning,2,2024-06-01T10:01:00Z
+LNR_2,LNR,Future Capability,Trend-based strategy,2,2024-06-01T10:01:00Z
+LNR_2,LNR,Future Capability,Supports growth mindset,3,2024-06-01T10:01:00Z
+LNR_2,LNR,Future Capability,Capability roadmap,4,2024-06-01T10:01:00Z
+LNR_3,LNR,Strategic Connection,Alignment with business strategy,1,2024-06-01T10:02:00Z
+LNR_3,LNR,Strategic Connection,Leadership support for learning,3,2024-06-01T10:02:00Z
+LNR_3,LNR,Strategic Connection,Future capability planning,5,2024-06-01T10:02:00Z
+LNR_3,LNR,Strategic Connection,Business stakeholder input,4,2024-06-01T10:02:00Z
+LNR_3,LNR,Needs Analysis,Prioritization by impact,1,2024-06-01T10:02:00Z
+LNR_3,LNR,Needs Analysis,Data and discussion mix,3,2024-06-01T10:02:00Z
+LNR_3,LNR,Needs Analysis,Ongoing analysis process,5,2024-06-01T10:02:00Z
+LNR_3,LNR,Needs Analysis,Insights drive decisions,1,2024-06-01T10:02:00Z
+LNR_3,LNR,Learning Design,Tailored to learner needs,5,2024-06-01T10:02:00Z
+LNR_3,LNR,Learning Design,Content relevance and quality,3,2024-06-01T10:02:00Z
+LNR_3,LNR,Learning Design,Engaging delivery formats,4,2024-06-01T10:02:00Z
+LNR_3,LNR,Learning Design,Practical application,3,2024-06-01T10:02:00Z
+LNR_3,LNR,Learning Culture,Psychological safety,3,2024-06-01T10:02:00Z
+LNR_3,LNR,Learning Culture,Manager support for learning,2,2024-06-01T10:02:00Z
+LNR_3,LNR,Learning Culture,Time/space for learning,2,2024-06-01T10:02:00Z
+LNR_3,LNR,Learning Culture,Shared responsibility,5,2024-06-01T10:02:00Z
+LNR_3,LNR,Platform and Tools,Ease of navigation,4,2024-06-01T10:02:00Z
+LNR_3,LNR,Platform and Tools,Integration with daily work,1,2024-06-01T10:02:00Z
+LNR_3,LNR,Platform and Tools,Insightful data usage,2,2024-06-01T10:02:00Z
+LNR_3,LNR,Platform and Tools,"Modern, relevant tools",4,2024-06-01T10:02:00Z
+LNR_3,LNR,Integration with Talent,Learning-to-career connection,1,2024-06-01T10:02:00Z
+LNR_3,LNR,Integration with Talent,Performance-driven development,2,2024-06-01T10:02:00Z
+LNR_3,LNR,Integration with Talent,Role in succession planning,4,2024-06-01T10:02:00Z
+LNR_3,LNR,Integration with Talent,Integration with HR systems,3,2024-06-01T10:02:00Z
+LNR_3,LNR,Learning Impact,Beyond attendance tracking,3,2024-06-01T10:02:00Z
+LNR_3,LNR,Learning Impact,Connection to business metrics,2,2024-06-01T10:02:00Z
+LNR_3,LNR,Learning Impact,Observed behavior change,3,2024-06-01T10:02:00Z
+LNR_3,LNR,Learning Impact,Continuous feedback loop,3,2024-06-01T10:02:00Z
+LNR_3,LNR,Future Capability,Future skill planning,4,2024-06-01T10:02:00Z
+LNR_3,LNR,Future Capability,Trend-based strategy,5,2024-06-01T10:02:00Z
+LNR_3,LNR,Future Capability,Supports growth mindset,1,2024-06-01T10:02:00Z
+LNR_3,LNR,Future Capability,Capability roadmap,3,2024-06-01T10:02:00Z
+LNR_4,LNR,Strategic Connection,Alignment with business strategy,5,2024-06-01T10:03:00Z
+LNR_4,LNR,Strategic Connection,Leadership support for learning,1,2024-06-01T10:03:00Z
+LNR_4,LNR,Strategic Connection,Future capability planning,4,2024-06-01T10:03:00Z
+LNR_4,LNR,Strategic Connection,Business stakeholder input,4,2024-06-01T10:03:00Z
+LNR_4,LNR,Needs Analysis,Prioritization by impact,1,2024-06-01T10:03:00Z
+LNR_4,LNR,Needs Analysis,Data and discussion mix,1,2024-06-01T10:03:00Z
+LNR_4,LNR,Needs Analysis,Ongoing analysis process,1,2024-06-01T10:03:00Z
+LNR_4,LNR,Needs Analysis,Insights drive decisions,2,2024-06-01T10:03:00Z
+LNR_4,LNR,Learning Design,Tailored to learner needs,3,2024-06-01T10:03:00Z
+LNR_4,LNR,Learning Design,Content relevance and quality,5,2024-06-01T10:03:00Z
+LNR_4,LNR,Learning Design,Engaging delivery formats,5,2024-06-01T10:03:00Z
+LNR_4,LNR,Learning Design,Practical application,2,2024-06-01T10:03:00Z
+LNR_4,LNR,Learning Culture,Psychological safety,1,2024-06-01T10:03:00Z
+LNR_4,LNR,Learning Culture,Manager support for learning,1,2024-06-01T10:03:00Z
+LNR_4,LNR,Learning Culture,Time/space for learning,5,2024-06-01T10:03:00Z
+LNR_4,LNR,Learning Culture,Shared responsibility,2,2024-06-01T10:03:00Z
+LNR_4,LNR,Platform and Tools,Ease of navigation,5,2024-06-01T10:03:00Z
+LNR_4,LNR,Platform and Tools,Integration with daily work,2,2024-06-01T10:03:00Z
+LNR_4,LNR,Platform and Tools,Insightful data usage,3,2024-06-01T10:03:00Z
+LNR_4,LNR,Platform and Tools,"Modern, relevant tools",3,2024-06-01T10:03:00Z
+LNR_4,LNR,Integration with Talent,Learning-to-career connection,2,2024-06-01T10:03:00Z
+LNR_4,LNR,Integration with Talent,Performance-driven development,2,2024-06-01T10:03:00Z
+LNR_4,LNR,Integration with Talent,Role in succession planning,4,2024-06-01T10:03:00Z
+LNR_4,LNR,Integration with Talent,Integration with HR systems,5,2024-06-01T10:03:00Z
+LNR_4,LNR,Learning Impact,Beyond attendance tracking,4,2024-06-01T10:03:00Z
+LNR_4,LNR,Learning Impact,Connection to business metrics,2,2024-06-01T10:03:00Z
+LNR_4,LNR,Learning Impact,Observed behavior change,4,2024-06-01T10:03:00Z
+LNR_4,LNR,Learning Impact,Continuous feedback loop,4,2024-06-01T10:03:00Z
+LNR_4,LNR,Future Capability,Future skill planning,4,2024-06-01T10:03:00Z
+LNR_4,LNR,Future Capability,Trend-based strategy,4,2024-06-01T10:03:00Z
+LNR_4,LNR,Future Capability,Supports growth mindset,1,2024-06-01T10:03:00Z
+LNR_4,LNR,Future Capability,Capability roadmap,2,2024-06-01T10:03:00Z
+LNR_5,LNR,Strategic Connection,Alignment with business strategy,4,2024-06-01T10:04:00Z
+LNR_5,LNR,Strategic Connection,Leadership support for learning,1,2024-06-01T10:04:00Z
+LNR_5,LNR,Strategic Connection,Future capability planning,2,2024-06-01T10:04:00Z
+LNR_5,LNR,Strategic Connection,Business stakeholder input,3,2024-06-01T10:04:00Z
+LNR_5,LNR,Needs Analysis,Prioritization by impact,1,2024-06-01T10:04:00Z
+LNR_5,LNR,Needs Analysis,Data and discussion mix,2,2024-06-01T10:04:00Z
+LNR_5,LNR,Needs Analysis,Ongoing analysis process,2,2024-06-01T10:04:00Z
+LNR_5,LNR,Needs Analysis,Insights drive decisions,2,2024-06-01T10:04:00Z
+LNR_5,LNR,Learning Design,Tailored to learner needs,5,2024-06-01T10:04:00Z
+LNR_5,LNR,Learning Design,Content relevance and quality,5,2024-06-01T10:04:00Z
+LNR_5,LNR,Learning Design,Engaging delivery formats,2,2024-06-01T10:04:00Z
+LNR_5,LNR,Learning Design,Practical application,1,2024-06-01T10:04:00Z
+LNR_5,LNR,Learning Culture,Psychological safety,3,2024-06-01T10:04:00Z
+LNR_5,LNR,Learning Culture,Manager support for learning,4,2024-06-01T10:04:00Z
+LNR_5,LNR,Learning Culture,Time/space for learning,2,2024-06-01T10:04:00Z
+LNR_5,LNR,Learning Culture,Shared responsibility,4,2024-06-01T10:04:00Z
+LNR_5,LNR,Platform and Tools,Ease of navigation,1,2024-06-01T10:04:00Z
+LNR_5,LNR,Platform and Tools,Integration with daily work,1,2024-06-01T10:04:00Z
+LNR_5,LNR,Platform and Tools,Insightful data usage,3,2024-06-01T10:04:00Z
+LNR_5,LNR,Platform and Tools,"Modern, relevant tools",2,2024-06-01T10:04:00Z
+LNR_5,LNR,Integration with Talent,Learning-to-career connection,1,2024-06-01T10:04:00Z
+LNR_5,LNR,Integration with Talent,Performance-driven development,3,2024-06-01T10:04:00Z
+LNR_5,LNR,Integration with Talent,Role in succession planning,2,2024-06-01T10:04:00Z
+LNR_5,LNR,Integration with Talent,Integration with HR systems,4,2024-06-01T10:04:00Z
+LNR_5,LNR,Learning Impact,Beyond attendance tracking,4,2024-06-01T10:04:00Z
+LNR_5,LNR,Learning Impact,Connection to business metrics,2,2024-06-01T10:04:00Z
+LNR_5,LNR,Learning Impact,Observed behavior change,1,2024-06-01T10:04:00Z
+LNR_5,LNR,Learning Impact,Continuous feedback loop,4,2024-06-01T10:04:00Z
+LNR_5,LNR,Future Capability,Future skill planning,5,2024-06-01T10:04:00Z
+LNR_5,LNR,Future Capability,Trend-based strategy,3,2024-06-01T10:04:00Z
+LNR_5,LNR,Future Capability,Supports growth mindset,3,2024-06-01T10:04:00Z
+LNR_5,LNR,Future Capability,Capability roadmap,5,2024-06-01T10:04:00Z
